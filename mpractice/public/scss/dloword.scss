@@ -1,0 +1,102 @@
+@charset "UTF-8";
+$ppr:720/16/1rem;
+.mui_table{
+    width: 100%;
+    .mui_table_hd{
+       width: 100%;
+       background: white;
+       padding-top: 26/$ppr;
+       padding-bottom: 26/$ppr;
+       border-bottom: 1px solid #AAAAAA;
+       box-sizing: border-box;
+       .mui_table_hd_list{
+           color: #222222;
+       }
+       #mui_table_hd_list2{
+           float: left;
+           margin-left: 150/$ppr;
+           font-size: 32/$ppr;
+       }
+       #mui_table_hd_list1{
+           float: right;
+           margin-right:150/$ppr;
+           font-size: 32/$ppr;
+       }
+    }
+    .mui_table_hd_list.active{
+        color: #D3A100;
+    }
+    .mui_table_bd{
+        width: 100%;
+        background: white;
+        padding-bottom: 20/$ppr;
+        display: none;
+        .mui_table_bd_list{
+           width: 90%;
+           height:160/$ppr;
+           margin:auto;
+           border-bottom:1px solid #AAAAAA;
+            padding-bottom:20/$ppr;
+            .list-left{
+                float: left;
+                img{
+                    display: inline-block;
+                    width: 200/$ppr;
+                    height: 120/$ppr;
+                    margin-top: 20/$ppr;
+                }
+               
+            }
+             .list-left1{
+                 width: 20;
+                    float:left;
+                    img{
+                        display: inline-block;
+                        width: 120/$ppr;
+                        height: 120/$ppr;
+                        border-radius: 50%;
+                        margin-top: 20/$ppr;
+                    }
+                }
+                
+            .list_left-con{               
+                float: left;
+                margin-left: 20/$ppr;
+              
+            }
+        }
+    }
+}
+  .list_left_con_top{
+                    font-size: 28/$ppr;
+                    color: #D3A100;
+                    margin-top: 10/$ppr;
+                }
+                .list_left_con_btn{
+                    font-size: 24/$ppr;
+                    margin-top:20/$ppr;
+                }
+                .list_left_con_btn1{
+                    font-size: 24/$ppr;
+                    margin-top: 10/$ppr;
+                  
+                }
+ .list_left_con_bbt{
+                        
+                    .list_left_bbt_lefgt{
+                        float: left;
+                        font-size:24/$ppr;
+                    }
+                    .list_left_bbt_right{
+                        float:left;
+                        margin-left:20/$ppr;
+                        font-size: 24/$ppr;
+                      
+                    }
+                    .list_left_bbt_right1{
+                        float: right;
+                        font-size:24/$ppr;
+                        margin-right:-20%;
+                        margin-top: 10/$ppr;
+                    }
+                }

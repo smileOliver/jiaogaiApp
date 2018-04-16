@@ -1,0 +1,20 @@
+.medical_top {
+  width: 100%;
+  margin-top: 0.44444rem; }
+  .medical_top .medical_top_list {
+    text-align: center;
+    color: #222222;
+    background: white;
+    width: 100%;
+    line-height: 1.33333rem;
+    height: 1.33333rem; }
+    .medical_top .medical_top_list .medical_con {
+      width: 100%; }
+      .medical_top .medical_top_list .medical_con .medical_meu_list {
+        width: 100%;
+        background: white;
+        height: 1.33333rem;
+        line-height: 1.33333rem;
+        margin-top: 0.04444rem; }
+
+/*# sourceMappingURL=medical_records.css.map */

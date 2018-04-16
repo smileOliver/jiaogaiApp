@@ -1,0 +1,56 @@
+.register_con {
+  width: 100%;
+  background: white;
+  margin: auto;
+  margin-top:10px;
+  padding-bottom: 2.22222rem; }
+  .register_con .register_con_list {
+    width: 14.66667rem;
+    height: 50px;
+    margin: auto;
+    border-bottom: 1px solid #CCCCCC;
+    box-sizing: border-box;
+  }
+  .register_con .register_con_list input {
+    display: inline-block;
+    width: 9.33333rem;
+    font-size: 0.62222rem;
+    padding:0.15rem 0.35rem;
+    border: none;
+    color: #9FA0A0; }
+  .register_con .register_con_text {
+    font-size: 0.71111rem;
+    color: #222222;
+    display: inline-block;
+    margin-top: 0.66667rem; }
+  .register_con .register_num {
+    width: 3.65rem;
+    margin-top: 0.3rem;
+    border-radius: 0.22222rem;
+    border: none;
+    padding: 5px 15px;
+    background: #169eeb;
+    color: white;
+    font-size: 14px; }
+
+#register_button {
+  width: 14.66667rem;
+  line-height: 1.77778rem;
+  color: white;
+  font-size: 0.8rem;
+  background:#169eeb;
+  margin: auto;
+  border-radius: 0.44444rem;
+  margin-left: 0.66667rem;
+  margin-top: 1rem; 
+  border: none;
+  }
+.register_select{
+	  margin-left: 3.32rem;
+	  margin-top: -0.9rem;
+  }
+#departmentId{
+	font-size: 0.65rem;
+	
+}
+/*# sourceMappingURL=register.css.map */

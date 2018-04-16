@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta http-equiv="Access-Control-Allow-Origin" content="">
+        <meta http-equiv="content-security-policy">
+		<title>笔记</title>
+		<link rel="stylesheet" href="../public/css/mui.css" />
+		<script>
+		 	var html=document.documentElement;
+		 	var w = window.outerWidth || screen.width; if (w > 720){w='720'};
+		 	var fontSize = w/16 + 'px';html.style.fontSize =fontSize;
+		 </script>
+		 <link rel="stylesheet" href="../public/css/notes_list.css"/>
+		 <link rel="stylesheet" href="../public/css/myapp.css" />
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav" id="header">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">笔记</h1>
+		</header>
+		<div class="mui-content">
+			<div class="notes_list">
+				<div id="all_content_top">医案记录</div>
+				<div class="all_content_text">
+					<div class="all_content_text_list clear">
+						<div class="all_content_left">[跟诊时间]</div>
+						<div class="all_context_right">2017/10/13</div>
+					</div>
+					<div class="all_content_text_list  clear">
+						<div class="all_content_left">[病人性别]</div>
+						<div class="all_context_right">男</div>
+					</div>
+					<div class="all_content_text_list  clear">
+						<div class="all_content_left">[主要症状]</div>
+						<div class="all_context_right">这是文字这是文字这是文字这
+							是文字这是文字这是文字这是文字</div>
+					</div>
+					<div class="all_content_text_list  clear">
+						<div class="all_content_left">[四诊]</div>
+						<div class="all_context_right">这是文字这是文字这是文字这
+							是文字这是文字这是文字这是文字</div>
+					</div>
+					<div class="all_content_text_list  clear">
+						<div class="all_content_left">[病因]</div>
+						<div class="all_context_right">这是文字这是文字这是文字这
+							是文字这是文字这是文字这是文字</div>
+					</div>
+					<div class="all_content_text_list  clear">
+						<div class="all_content_left">[病机]</div>
+						<div class="all_context_right">这是文字这是文字这是文字这
+							是文字这是文字这是文字这是文字</div>
+					</div>
+					<div class="all_content_text_list  clear">
+						<div class="all_content_left">[辩证]</div>
+						<div class="all_context_right">这是文字这是文字这是文字这
+							是文字这是文字这是文字这是文字</div>
+					</div>
+					<div class="all_content_text_list  clear">
+						<div class="all_content_left">[临床手法]</div>
+						<div class="all_context_right">这是文字这是文字这是文字这
+							是文字这是文字这是文字这是文字</div>
+					</div>
+					<div class="all_content_text_list  clear">
+						<div class="all_content_left">[取穴]</div>
+						<div class="all_context_right">这是文字这是文字这是文字这
+							是文字这是文字这是文字这是文字</div>
+					</div>
+					<div class="all_content_text_list  clear">
+						<div class="all_content_left">[补充说明]</div>
+						<div class="all_context_right">这是文字这是文字这是文字这
+							是文字这是文字这是文字这是文字</div>
+					</div>
+					<div class="all_content_text_list  clear">
+						<div class="all_content_left">[方药]</div>
+						<div class="all_context_right">这是文字这是文字这是文字这
+							是文字这是文字这是文字这是文字</div>
+					</div>
+				</div>
+				<div class="all_content_bottom">
+					<div class="all_content_bttom_top">心得体会</div>
+					<div class=" ">
+						这是文字这是文字这是文字这是文字这是文字这是文字这是文字
+					</div>
+				</div>
+			</div>
+		</div>
+<script src="../public/js/mui.js"></script>
+<!-- <script type="text/javascript" src="../public/js/jquery-1.12.3.js" ></script>-->
+  <script src="../public/js/zepto.min.js"></script>
+     <script type="text/javascript" src="../public/js/app.js" ></script>
+     <script>
+     	var btton_top= $("#all_content_top")[0]
+     	   btton_top.addEventListener("tap",function(){
+     	
+       /*var id = 1
+	 	var pageNum =1
+	 	var pageSize=1*/
+	 	
+   mui.get('http://192.168.1.147:8081/notes/findNotesByKind',{
+    	
+		 id:1,
+		 pageNum:1,
+		 pageSize:1,
+		
+	},function(data){
+		
+		//服务器返回响应，根据响应结果，分析是否登录成功；
+	if(data.code == 200){
+		alert("注册成功")
+	}else{
+		alert("注册失败")
+	}
+	},'json'
+);
+     	})
+     </script>
+	</body>
+</html>

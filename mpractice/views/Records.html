@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="Access-Control-Allow-Origin" content="">
+        <meta http-equiv="content-security-policy">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta http-equiv="Access-Control-Allow-Origin" content="">
+        <meta http-equiv="content-security-policy">
+		<title>古今医案</title>
+		<link rel="stylesheet" href="../public/css/mui.css" />
+		<script>
+		 	var html=document.documentElement;
+		 	var w = window.outerWidth || screen.width; if (w > 720){w='720'};
+		 	var fontSize = w/16 + 'px';html.style.fontSize =fontSize;
+		 </script>
+		 <link rel="stylesheet" href="../public/css/records_con.css"/>
+		 <link rel="stylesheet" href="../public/css/myapp.css" />
+	     <style>
+	     	#pullrefresh{
+				margin-top:56px;
+				position: absolute;
+			}
+			
+	     </style>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		<h1 class="mui-title">古今医案</h1>
+		</header>
+		<div id="pullrefresh" class="mui-scroll-wrapper">
+	<div class="mui-scroll">
+		<div class="mui_records_tab">
+			<div class="mui_records_hd">
+				<div class="mui_records_m" >
+					全部朝代
+				</div>
+			</div>
+				
+			<div class="mui_records_bd">
+				<div class="mui_records_tab1">
+				<div class="mui_records_tab1_hd">
+					<div class="mui_records_sm">
+					<div class="mui_records_sm_list active">
+						汉
+					</div>
+					<div class="mui_records_sm_list">
+						宋
+					</div>
+					<div class="mui_records_sm_list">
+						金
+					</div>
+					<div class="mui_records_sm_list">
+						元
+					</div>
+					<div class="mui_records_sm_list">
+						明
+					</div>
+					<div class="mui_records_sm_list">
+						清
+					</div>
+				</div>
+			</div>
+	
+			<div class="mui_records_tab1_bd">
+			<ul class="mui-table-view mui-table-view-chevron " id="mui_records_bttom">
+				
+			</ul>
+			
+			</div>								
+			</div>								
+			</div>
+			</div>
+			</div>
+		</div>	
+		<script type="text/javascript" src="../public/js/jquery-1.12.3.js" ></script>
+		<script type="text/javascript" src="../public/js/mui.js" ></script>
+		<script type="text/javascript" src="../public/js/zepto.min.js"></script>
+		<script type="text/javascript" src="../public/js/app.js" ></script>
+		
+		<script type="text/javascript" src="../public/js/records.js" ></script>
+		<script>
+/*		$('.mui_records_m').attr('tab','false')	
+		 $('.mui_records_m').click(function () {
+      
+    })	*/	    
+    mui.init()
+		</script>
+	</body>
+</html>

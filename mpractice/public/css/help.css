@@ -1,0 +1,46 @@
+.mui_table_list {
+  width: 90%;
+  margin: auto;
+  border-bottom: 1px solid #AAAAAA;
+  box-sizing: border-box;
+  padding-top: 0.44444rem;
+  padding-bottom: 0.44444rem; }
+
+.mui_list_text {
+  float: left;
+  font-size: 0.62222rem; }
+
+.mui_list_right {
+  float: right; }
+  .mui_list_right img {
+    width: 0.4rem;
+    height: 0.71111rem;
+    display: inline-block;
+    margin-top: 0.11111rem; }
+
+.mui_table_bd_con {
+  width: 90%;
+  margin: auto;
+  position: relative; }
+  .mui_table_bd_con #file_head {
+    margin-top: 4.88889rem;
+    margin-left: 0.66667rem; }
+  .mui_table_bd_con #localImag {
+    position: absolute;
+    top: 0.44444rem;
+    left: 0.66667rem; }
+
+.mui_bttom_send {
+  width: 90%;
+  margin: auto;
+  line-height: 1.33333rem; }
+  .mui_bttom_send .mui_bttom_send button {
+    width: 90%;
+    height: 1.33333rem;
+    line-height: 1.33333rem;
+    color: white;
+    outline: none;
+    border: none;
+    background: #D3A100; }
+
+/*# sourceMappingURL=help.css.map */

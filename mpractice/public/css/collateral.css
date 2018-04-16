@@ -1,0 +1,35 @@
+.collarteral_con {
+  width: 100%;
+  margin-top: 0.44444rem; }
+  .collarteral_con .collarteral_top {
+    width: 100%;
+    background: white;
+    padding-top: 0.44444rem; }
+    .collarteral_con .collarteral_top .collarteral_top_text {
+      font-size: 0.8rem;
+      color: #222222;
+      text-align: center; }
+    .collarteral_con .collarteral_top .collarteral_btn_text {
+      font-size: 0.53333rem;
+      color: #AAAAAA;
+      text-align: center; }
+  .collarteral_con .collarteral_con_center {
+    padding-top: 0.44444rem;
+    width: 100%;
+    background: white;
+    margin-top: 0.44444rem;
+    padding-bottom: 0.44444rem; }
+    .collarteral_con .collarteral_con_center .collarteral_con_list {
+      width: 100%; }
+      .collarteral_con .collarteral_con_center .collarteral_con_list .collarteral_con_list_left {
+        width: 4.73333rem;
+        height: 1.06667rem;
+        background: #FEF8D3;
+        border-radius: 0.22222rem;
+        float: left;
+        margin-left: 0.44444rem;
+        line-height: 1.06667rem;
+        text-align: center;
+        margin-top: 0.33333rem; }
+
+/*# sourceMappingURL=collateral.css.map */

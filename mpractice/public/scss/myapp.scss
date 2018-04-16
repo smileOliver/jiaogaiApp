@@ -1,0 +1,44 @@
+@charset "UTF-8";
+$ppr:720/16/1rem;
+html{background:#EFEFEF;font-size:62.5%;}
+article,aside,dialog,footer,header,section,footer,nav,figure,menu{display:block}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, figure, section, legend, textarea, p, blockquote, th, td, input, select, textarea, button { margin: 0; padding: 0 }
+fieldset, img { border: 0 none }
+img{display: block;width: 100%;height: auto;}
+body{font-family:"Microsoft Yahei",Muiicons,MuiiconSpread,Arial,Helvetica,sans-serif;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight: normal;}
+table{border-collapse:collapse;border-spacing:0}
+ul,ol,dd,dt,dl{list-style-type:none;}
+a{color:#333;text-decoration: none;-webkit-touch-callout: none;-webkit-user-select: none;}
+a,input,select{-webkit-tap-highlight-color: transparent;-webkit-appearance: none;-webkit-border-radius: 0;}
+input,img{border:none;}
+i,em{font-style:normal;}
+:focus{outline: none}
+select{ border: none; }
+
+/*手机格式*/
+/*@media screen and (max-width: 640px){html{font-size: 15.625vw;}}*/
+/*其他格式*/
+/*@media screen and (min-width: 640px){html{font-size: 100px;}}*/
+
+/*常用*/
+.clear { clear: both; }
+.clear:after { display: block; clear: both; visibility: hidden; height: 0; overflow: hidden; content: "."; }
+.auto { overflow: hidden; }
+
+
+/*返回箭头*/
+a {
+    text-decoration: none;
+    color: #cccccc;
+}
+a:active {
+    color: #f0f0f0
+}
+/*.mui-content{
+    padding-top:90/$ppr;
+}
+**/
+.mui_bttom{
+    background: #FFFFFF!important;
+}

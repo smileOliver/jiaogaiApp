@@ -1,0 +1,25 @@
+.publish_con {
+  width: 100%;
+  margin-top: 0.44444rem; }
+
+.pulish_list {
+  width: 100%;
+  background: white;
+  padding-top: 0.22222rem;
+  padding-bottom: 0.22222rem;
+  margin-top: 0.04444rem; }
+  .pulish_list .sex {
+    margin-left: 5%; }
+  .pulish_list .pulish_list_left {
+    width: 90%;
+    margin: auto; }
+    .pulish_list .pulish_list_left .input_num {
+      width: 2.66667rem;
+      line-height: 0.66667rem;
+      height: 0.66667rem; }
+  .pulish_list .pulish_list_left1 {
+    width: 80%;
+    margin-left: 11%;
+    margin-top: -1rem; }
+
+/*# sourceMappingURL=publish.css.map */

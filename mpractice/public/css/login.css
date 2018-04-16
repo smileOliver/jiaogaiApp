@@ -1,0 +1,97 @@
+
+.zlogin_info {
+  width: 100%;
+  background:#169eeb;
+  height: 12rem; 
+  margin-top: 5.25rem;
+  }
+  .zlogin_info .zlogin_info_div {
+    width: 11.11111rem;
+    margin: auto; }
+  .zlogin_info .zlogin_info_div input {
+    width: 11.11111rem;
+    margin: auto;
+    background: white;
+    border-radius: 0.44444rem;
+    font-size: 0.62222rem; }
+  .zlogin_info #account {
+    display: inline-block;
+    margin-top: 2.88889rem; }
+  .zlogin_info #password {
+    margin-top: 0.66667rem; }
+  .zlogin_info .zlogin_info_button {
+    width: 11.11111rem;
+    margin: auto;
+    margin-top: 1.11111rem; }
+  .zlogin_info .zlogin_info_button button {
+    width: 11.11111rem;
+    background: none;
+    border: 2px solid white;
+    height: 1.77778rem;
+    color: white;
+    border-radius: 0.44444rem;
+    font-size: 0.8rem; }
+  .zlogin_info .zlogin_info_text {
+    width: 11.11111rem;
+    margin: auto;
+    color: white;
+    font-size: 0.62222rem;
+    margin-top: 0.8rem; }
+    .zlogin_info .zlogin_info_text #register {
+      float: left; }
+    .zlogin_info .zlogin_info_text #F_password {
+      float: right; }
+
+.zlogin_info_account {
+  width: 100%;
+  margin-top: 2.44444rem; }
+  .zlogin_info_account .zlogin_info_account_left {
+    width: 3.33333rem;
+    float: left;
+    margin-left: 0.66667rem;
+    height: 0.04444rem;
+    background: #AAAAAA;
+    margin-top: 0.53333rem; }
+  .zlogin_info_account .zlogin_info_account_centeer {
+    float: left;
+    margin-left: 1.33333rem;
+    font-size: 0.71111rem; }
+  .zlogin_info_account .zlogin_info_account_right {
+    width: 3.33333rem;
+    float: right;
+    margin-right: 0.66667rem;
+    height: 0.04444rem;
+    background: #AAAAAA;
+    margin-top: 0.53333rem; }
+
+.zlogin_info_phone {
+  width: 11.11111rem;
+  margin: auto;
+  margin-top: 1.33333rem; }
+  .zlogin_info_phone .zlogin_info_phone_list {
+    float: left;
+    margin-left: 2.22222rem; }
+    .zlogin_info_phone .zlogin_info_phone_list .zlogin_info_wx {
+      width: 2.22222rem;
+      height: 2.22222rem;
+      border-radius: 50%;
+      background: #e9b800 url(../image/weixin.png) no-repeat center;
+      background-size: 70%; }
+    .zlogin_info_phone .zlogin_info_phone_list .zlogin_text {
+      text-align: center;
+      font-size: 0.71111rem;
+      color: #222222; }
+    .zlogin_info_phone .zlogin_info_phone_list .zlogin_info_wb {
+      width: 2.22222rem;
+      height: 2.22222rem;
+      border-radius: 50%;
+      background: #e9b800 url(../image/weib.png) no-repeat center;
+      background-size: 70%; }
+    .zlogin_info_phone .zlogin_info_phone_list .zlogin_info_qq {
+      width: 2.22222rem;
+      height: 2.22222rem;
+      border-radius: 50%;
+      background:#e9b800 url(../image/qq.png) no-repeat center;
+      background-size: 70%; }
+
+/*# sourceMappingURL=login.css.map */

@@ -1,0 +1,542 @@
+{
+  "mpractice/views/grow_up.html": {
+    "resources": [
+      "mpractice/public/js/grow_up.js",
+      "mpractice/public/css/growup.css",
+      "mpractice/public/js/app.js",
+      "mpractice/public/js/mui.js",
+      "mpractice/public/image/xuewei.png",
+      "mpractice/public/css/mui.css",
+      "mpractice/public/css/myapp.css",
+      "mpractice/public/js/zepto.min.js",
+      "mpractice/public/image/banner1.jpg",
+      "mpractice/public/fonts/mui.ttf",
+      "mpractice/public/image/fenx.png",
+      "mpractice/public/image/down.png",
+      "mpractice/public/js/mui.picker.min.js",
+      "mpractice/public/css/app.css",
+      "mpractice/public/css/mui.picker.min.css",
+      "mpractice/public/js/mui.poppicker.js"
+    ],
+    "refer": []
+  },
+  "mpractice/views/login.html": {
+    "resources": [
+      "mpractice/public/css/login.css",
+      "mpractice/public/js/app.js",
+      "mpractice/public/js/mui.js",
+      "mpractice/public/css/mui.css",
+      "mpractice/public/css/myapp.css",
+      "mpractice/public/js/zepto.min.js",
+      "mpractice/public/fonts/mui.ttf"
+    ],
+    "refer": [
+      "mpractice/views/index.html",
+      "mpractice/views/Forget_passward.html",
+      "mpractice/views/register.html",
+      "mpractice/views/.html"
+    ]
+  },
+  "mpractice/views/index.html": {
+    "resources": [
+      "mpractice/public/image/index_2.png",
+      "mpractice/public/image/index_1.png",
+      "mpractice/public/css/index.css",
+      "mpractice/public/css/myapp.css",
+      "mpractice/public/image/shouye.png",
+      "mpractice/public/image/shequ.png",
+      "mpractice/public/js/zepto.min.js",
+      "mpractice/public/image/index.png",
+      "mpractice/public/js/app.js",
+      "mpractice/public/image/index_4.png",
+      "mpractice/public/image/newsicon.png",
+      "mpractice/public/image/bijia.png",
+      "mpractice/public/js/mui.js",
+      "mpractice/public/image/index_5.png",
+      "mpractice/public/js/main.js",
+      "mpractice/public/image/index_tu.png",
+      "mpractice/public/css/mui.css",
+      "mpractice/public/image/banner_1 (2).png",
+      "mpractice/public/image/myicon.png",
+      "mpractice/public/image/index_3.png",
+      "mpractice/public/fonts/mui.ttf"
+    ],
+    "refer": [
+      "mpractice/views/myindex.html",
+      "mpractice/views/guideline.html",
+      "mpractice/views/Records.html",
+      "mpractice/views/acupoints.html",
+      "mpractice/views/Clinical_video.html",
+      "mpractice/views/index_photo.html",
+      "mpractice/views/index_details.html",
+      "mpractice/views/index_records.html",
+      "mpractice/views/notes.html",
+      "mpractice/views/index_image.html",
+      "mpractice/views/image.html",
+      "mpractice/views/com_notes.html",
+      "mpractice/views/declaration.html",
+      "mpractice/views/project.html",
+      "mpractice/views/notice.html"
+    ]
+  },
+  "mpractice/views/myindex.html": {
+    "resources": [
+      "mpractice/public/image/my_icon3.png",
+      "mpractice/public/image/img.jpg",
+      "mpractice/public/image/my_icon8.png",
+      "mpractice/public/image/my_icon9.png",
+      "mpractice/public/css/myapp.css",
+      "mpractice/public/image/my_icon2.png",
+      "mpractice/public/image/shequ.png",
+      "mpractice/public/css/myindex.css",
+      "mpractice/public/js/zepto.min.js",
+      "mpractice/public/image/my_icon5.png",
+      "mpractice/public/image/my_icon7.png",
+      "mpractice/public/js/app.js",
+      "mpractice/public/image/bijia.png",
+      "mpractice/public/image/shouyeb.png",
+      "mpractice/public/js/mui.js",
+      "mpractice/public/image/my_icon1.png",
+      "mpractice/public/css/mui.css",
+      "mpractice/public/image/my_icon6.png",
+      "mpractice/public/image/my_icon4.png",
+      "mpractice/public/fonts/mui.ttf",
+      "mpractice/public/image/myb.png"
+    ],
+    "refer": [
+      "mpractice/views/index.html",
+      "mpractice/views/notes.html",
+      "mpractice/views/dloword.html",
+      "mpractice/views/collection.html",
+      "mpractice/views/my_notes.html",
+      "mpractice/views/help.html",
+      "mpractice/views/shezhi.html",
+      "mpractice/views/grow_up.html",
+      "mpractice/views/information.html",
+      "mpractice/views/my_phone.html",
+      "mpractice/views/password.html",
+      "mpractice/views/login.html",
+      "mpractice/views/com_notes.html",
+      "mpractice/views/project.html",
+      "mpractice/views/news.html",
+      "mpractice/views/shenpi.html",
+      "mpractice/views/phone.html"
+    ]
+  },
+  "mpractice/views/guideline_list.html": {
+    "resources": [
+      "mpractice/public/image/list.png",
+      "mpractice/public/js/app.js",
+      "mpractice/public/image/banner2.jpg",
+      "mpractice/public/js/mui.js",
+      "mpractice/public/css/guideline_list.css",
+      "mpractice/public/js/geideline_list.js",
+      "mpractice/public/css/mui.css",
+      "mpractice/public/css/myapp.css",
+      "mpractice/public/js/zepto.min.js",
+      "mpractice/public/fonts/mui.ttf"
+    ],
+    "refer": []
+  },
+  "mpractice/views/guideline.html": {
+    "resources": [
+      "mpractice/public/js/jquery-1.12.3.js",
+      "mpractice/public/css/guideline.css",
+      "mpractice/public/js/app.js",
+      "mpractice/public/js/guideline.js",
+      "mpractice/public/js/mui.js",
+      "mpractice/public/css/mui.css",
+      "mpractice/public/css/myapp.css",
+      "mpractice/public/fonts/mui.ttf"
+    ],
+    "refer": [
+      "mpractice/views/guideline_list.html"
+    ]
+  },
+  "mpractice/views/Records.html": {
+    "resources": [
+      "mpractice/public/js/jquery-1.12.3.js",
+      "mpractice/public/js/app.js",
+      "mpractice/public/css/records_con.css",
+      "mpractice/public/js/mui.js",
+      "mpractice/public/js/records.js",
+      "mpractice/public/css/mui.css",
+      "mpractice/public/css/myapp.css",
+      "mpractice/public/js/zepto.min.js",
+      "mpractice/public/fonts/mui.ttf"
+    ],
+    "refer": []
+  },
+  "mpractice/views/acupoints.html": {
+    "resources": [
+      "mpractice/public/js/app.js",
+      "mpractice/public/js/mui.js",
+      "mpractice/public/css/acupoints.css",
+      "mpractice/public/image/index_9.png",
+      "mpractice/public/css/mui.css",
+      "mpractice/public/css/myapp.css",
+      "mpractice/public/js/records_list.js",
+      "mpractice/public/js/zepto.min.js",
+      "mpractice/public/fonts/mui.ttf"
+    ],
+    "refer": []
+  },
+  "mpractice/views/Clinical_video.html": {
+    "resources": [
+      "mpractice/public/js/jquery-1.12.3.js",
+      "mpractice/public/image/right.png",
+      "mpractice/public/image/index_cli.png",
+      "mpractice/public/js/app.js",
+      "mpractice/public/image/index_clic.png",
+      "mpractice/public/js/mui.js",
+      "mpractice/public/js/video.js",
+      "mpractice/public/css/cliical_video.css",
+      "mpractice/public/css/mui.css",
+      "mpractice/public/css/myapp.css",
+      "mpractice/public/js/zepto.min.js",
+      "mpractice/public/fonts/mui.ttf"
+    ],
+    "refer": []
+  },
+  "mpractice/views/com_index.html": {
+    "resources": [
+      "mpractice/public/js/jquery-1.12.3.js",
+      "mpractice/public/js/com_notes.js",
+      "mpractice/public/js/app.js",
+      "mpractice/public/image/fb.png",
+      "mpractice/public/css/swiper.css",
+      "mpractice/public/js/mui.js",
+      "mpractice/public/css/com_index.css",
+      "mpractice/public/css/mui.css",
+      "mpractice/public/css/myapp.css",
+      "mpractice/public/js/com_add.js",
+      "mpractice/public/js/swiper.min.js",
+      "mpractice/public/image/sca.png",
+      "mpractice/public/image/img.jpg",
+      "mpractice/public/image/shequc.png",
+      "mpractice/public/image/shouyeb.png",
+      "mpractice/public/image/bijia.png",
+      "mpractice/public/image/myicon.png",
+      "mpractice/public/fonts/mui.ttf"
+    ],
+    "refer": []
+  },
+  "mpractice/views/notes.html": {
+    "resources": [
+      "mpractice/public/image/icon3_notes.png",
+      "mpractice/public/image/icon_notes.png",
+      "mpractice/public/css/myapp.css",
+      "mpractice/public/image/bijic.png",
+      "mpractice/public/image/shequ.png",
+      "mpractice/public/js/zepto.min.js",
+      "mpractice/public/css/notes.css",
+      "mpractice/public/js/app.js",
+      "mpractice/public/css/swiper.css",
+      "mpractice/public/image/shouyeb.png",
+      "mpractice/public/js/mui.js",
+      "mpractice/public/js/note_tab.js",
+      "mpractice/public/css/mui.css",
+      "mpractice/public/image/myicon.png",
+      "mpractice/public/image/notes_tu.png",
+      "mpractice/public/fonts/mui.ttf",
+      "mpractice/public/js/swiper.min.js"
+    ],
+    "refer": [
+      "mpractice/views/com_index.html",
+      "mpractice/views/com_notes.html",
+      "mpractice/views/myindex.html",
+      "mpractice/views/index.html",
+      "mpractice/views/project.html"
+    ]
+  },
+  "mpractice/views/dloword.html": {
+    "resources": [
+      "mpractice/public/js/app.js",
+      "mpractice/public/image/img.jpg",
+      "mpractice/public/js/mui.js",
+      "mpractice/public/css/dloword.css",
+      "mpractice/public/css/mui.css",
+      "mpractice/public/css/myapp.css",
+      "mpractice/public/js/zepto.min.js",
+      "mpractice/public/fonts/mui.ttf"
+    ],
+    "refer": []
+  },
+  "mpractice/views/XueW.html": {
+    "resources": [
+      "mpractice/public/js/app.js",
+      "mpractice/public/js/mui.js",
+      "mpractice/public/css/dloword.css",
+      "mpractice/public/css/mui.css",
+      "mpractice/public/css/myapp.css",
+      "mpractice/public/js/Xuew.js",
+      "mpractice/public/css/Xuew.css",
+      "mpractice/public/js/zepto.min.js"
+    ],
+    "refer": []
+  },
+  "mpractice/views/collection.html": {
+    "resources": [
+      "mpractice/public/image/anli.png",
+      "mpractice/public/image/banner3.jpg",
+      "mpractice/public/js/app.js",
+      "mpractice/public/image/banner2.jpg",
+      "mpractice/public/css/collection.css",
+      "mpractice/public/image/shoucang.png",
+      "mpractice/public/js/mui.js",
+      "mpractice/public/image/biji1.png",
+      "mpractice/public/css/dloword.css",
+      "mpractice/public/css/mui.css",
+      "mpractice/public/css/myapp.css",
+      "mpractice/public/js/zepto.min.js",
+      "mpractice/public/image/banner1.jpg",
+      "mpractice/public/fonts/mui.ttf"
+    ],
+    "refer": [
+      "mpractice/views/XueW.html",
+      "mpractice/views/my_notes.html"
+    ]
+  },
+  "mpractice/views/my_notes.html": {
+    "resources": [
+      "mpractice/public/js/mynotes.js",
+      "mpractice/public/js/app.js",
+      "mpractice/public/js/mui.js",
+      "mpractice/public/css/mui.css",
+      "mpractice/public/css/myapp.css",
+      "mpractice/public/js/zepto.min.js",
+      "mpractice/public/css/my_notes.css",
+      "mpractice/public/fonts/mui.ttf"
+    ],
+    "refer": []
+  },
+  "mpractice/views/help.html": {
+    "resources": [
+      "mpractice/public/js/app.js",
+      "mpractice/public/css/help.css",
+      "mpractice/public/js/mui.js",
+      "mpractice/public/css/dloword.css",
+      "mpractice/public/css/mui.css",
+      "mpractice/public/js/help.js",
+      "mpractice/public/css/myapp.css",
+      "mpractice/public/js/zepto.min.js",
+      "mpractice/public/image/my_icon4.png",
+      "mpractice/public/fonts/mui.ttf"
+    ],
+    "refer": []
+  },
+  "mpractice/views/information.html": {
+    "resources": [
+      "mpractice/public/js/information.js",
+      "mpractice/public/js/app.js",
+      "mpractice/public/js/mui.js",
+      "mpractice/public/css/register.css",
+      "mpractice/public/css/mui.css",
+      "mpractice/public/css/myapp.css",
+      "mpractice/public/js/zepto.min.js",
+      "mpractice/public/fonts/mui.ttf"
+    ],
+    "refer": [
+      "mpractice/views/editInfo.html"
+    ]
+  },
+  "mpractice/views/shezhi.html": {
+    "resources": [
+      "mpractice/public/image/fh.png",
+      "mpractice/public/image/mima.png",
+      "mpractice/public/js/app.js",
+      "mpractice/public/image/anquan.png",
+      "mpractice/public/js/mui.js",
+      "mpractice/public/css/mui.css",
+      "mpractice/public/css/myapp.css",
+      "mpractice/public/image/myimg.png",
+      "mpractice/public/css/myindex.css",
+      "mpractice/public/js/zepto.min.js",
+      "mpractice/public/image/shouji.png",
+      "mpractice/public/image/shejiao.png",
+      "mpractice/public/fonts/mui.ttf"
+    ],
+    "refer": [
+      "mpractice/views/information.html",
+      "mpractice/views/my_pasword.html",
+      "mpractice/views/password.html",
+      "mpractice/views/security.html"
+    ]
+  },
+  "mpractice/views/my_pasword.html": {
+    "resources": [
+      "mpractice/public/js/my_pasword.js",
+      "mpractice/public/js/app.js",
+      "mpractice/public/js/mui.js",
+      "mpractice/public/css/register.css",
+      "mpractice/public/css/mui.css",
+      "mpractice/public/css/myapp.css",
+      "mpractice/public/js/zepto.min.js",
+      "mpractice/public/fonts/mui.ttf"
+    ],
+    "refer": [
+      "mpractice/views/phone.html"
+    ]
+  },
+  "mpractice/views/phone.html": {
+    "resources": [
+      "mpractice/public/js/phone.js",
+      "mpractice/public/js/app.js",
+      "mpractice/public/js/mui.js",
+      "mpractice/public/css/register.css",
+      "mpractice/public/css/mui.css",
+      "mpractice/public/css/myapp.css",
+      "mpractice/public/js/zepto.min.js"
+    ],
+    "refer": []
+  },
+  "mpractice/views/password.html": {
+    "resources": [
+      "mpractice/public/js/app.js",
+      "mpractice/public/js/mui.js",
+      "mpractice/public/css/mui.css",
+      "mpractice/public/css/register.css",
+      "mpractice/public/css/myapp.css",
+      "mpractice/public/js/xiuPwd.js",
+      "mpractice/public/js/zepto.min.js",
+      "mpractice/public/fonts/mui.ttf"
+    ],
+    "refer": []
+  },
+  "mpractice/views/security.html": {
+    "resources": [
+      "mpractice/public/css/mui.css",
+      "mpractice/public/css/myapp.css",
+      "mpractice/public/css/myindex.css",
+      "mpractice/public/fonts/mui.ttf"
+    ],
+    "refer": []
+  },
+  "mpractice/views/index_photo.html": {
+    "resources": [
+      "mpractice/public/css/index_details.css",
+      "mpractice/public/js/app.js",
+      "mpractice/public/js/mui.js",
+      "mpractice/public/css/mui.css",
+      "mpractice/public/css/myapp.css",
+      "mpractice/public/image/records_top.png",
+      "mpractice/public/js/zepto.min.js",
+      "mpractice/public/fonts/mui.ttf"
+    ],
+    "refer": []
+  },
+  "mpractice/views/index_details.html": {
+    "resources": [
+      "mpractice/public/css/index_details.css",
+      "mpractice/public/js/app.js",
+      "mpractice/public/js/mui.js",
+      "mpractice/public/css/mui.css",
+      "mpractice/public/css/myapp.css",
+      "mpractice/public/image/records_top.png",
+      "mpractice/public/js/zepto.min.js",
+      "mpractice/public/fonts/mui.ttf"
+    ],
+    "refer": []
+  },
+  "mpractice/views/index_records.html": {
+    "resources": [
+      "mpractice/public/css/index_details.css",
+      "mpractice/public/js/app.js",
+      "mpractice/public/js/mui.js",
+      "mpractice/public/css/mui.css",
+      "mpractice/public/css/myapp.css",
+      "mpractice/public/image/records_top.png",
+      "mpractice/public/js/zepto.min.js",
+      "mpractice/public/fonts/mui.ttf"
+    ],
+    "refer": []
+  },
+  "mpractice/views/com_notes.html": {
+    "resources": [
+      "mpractice/public/image/sca.png",
+      "mpractice/public/css/com-notes.css",
+      "mpractice/public/image/img.jpg",
+      "mpractice/public/image/fb.png",
+      "mpractice/public/css/swiper.css",
+      "mpractice/public/js/com_tie.js",
+      "mpractice/public/js/com.js",
+      "mpractice/public/css/mui.css",
+      "mpractice/public/js/jquery-1.10.1.min.js",
+      "mpractice/public/css/myapp.css",
+      "mpractice/public/image/sc1.png",
+      "mpractice/public/image/pl1.png",
+      "mpractice/public/image/dza.png"
+    ],
+    "refer": [
+      "mpractice/views/myindex.html"
+    ]
+  },
+  "mpractice/views/index_image.html": {
+    "resources": [
+      "mpractice/public/css/index_details.css",
+      "mpractice/public/image/records_top.png"
+    ],
+    "refer": []
+  },
+  "mpractice/views/image.html": {
+    "resources": [
+      "mpractice/public/css/image.css",
+      "mpractice/public/css/mui.css",
+      "mpractice/public/js/images.js"
+    ],
+    "refer": []
+  },
+  "mpractice/views/Forget_passward.html": {
+    "refer": [
+      "mpractice/views/password.html",
+      "mpractice/views/Forget_update.html"
+    ],
+    "resources": []
+  },
+  "mpractice/views/Forget_update.html": {
+    "refer": [
+      "mpractice/views/login.html"
+    ],
+    "resources": []
+  },
+  "mpractice/views/project.html": {
+    "refer": [
+      "mpractice/views/myindex.html",
+      "mpractice/views/index.html",
+      "mpractice/views/declaration.html",
+      "mpractice/views/notes.html",
+      "mpractice/views/projet_detail.html"
+    ],
+    "resources": []
+  },
+  "mpractice/views/notice.html": {
+    "refer": [
+      "mpractice/views/index.html",
+      "mpractice/views/declaration.html"
+    ],
+    "resources": []
+  },
+  "mpractice/views/shenpi.html": {
+    "refer": [
+      "mpractice/views/projet_detail.html",
+      "mpractice/views/shenpi_detail.html",
+      "mpractice/views/index.html"
+    ],
+    "resources": []
+  },
+  "mpractice/views/news.html": {
+    "refer": [
+      "mpractice/views/comments.html"
+    ],
+    "resources": []
+  },
+  "mpractice/views/.html": {
+    "href": "mpractice/views/.html",
+    "priority": 0
+  },
+  "mpractice/views/my_phone.html": {
+    "refer": [
+      "mpractice/views/phone.html"
+    ]
+  }
+}

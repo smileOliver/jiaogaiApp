@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>发表</title>
+		<link rel="stylesheet" href="../public/css/mui.css" />
+		<script>
+		 	var html=document.documentElement;
+		 	var w = window.outerWidth || screen.width; if (w > 720){w='720'};
+		 	var fontSize = w/16 + 'px';html.style.fontSize =fontSize;
+		 </script>
+		 <link rel="stylesheet" href="../public/css/publish.css" />
+		 <link rel="stylesheet" href="../public/css/myapp.css" />
+		 <link rel="stylesheet" href="../public/css/notes.css" />
+		 
+	     <style>
+	     	.mui-content{
+	     		/*margin-top: 48px;*/
+	     	}
+	      .mui-radio{
+	      	width: 30%;
+	      	float: left;
+	      }
+	     </style>
+	     <link rel="stylesheet" href="../public/css/feedback-page.css" />
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		<h1 class="mui-title">发表</h1>
+		</header>
+		<div class="mui-content">
+			
+				<div class="mui-page-content feedback"style="margin-top: 10px;" >
+				
+				<div class="row mui-input-row">
+					<textarea id='question' class="mui-input-clear question" placeholder="请详细描述你的帖子内容..."></textarea>
+				</div>
+				<p>图片(选填,提供问题截图)</p>
+				<div id='image-list' class="row image-list">
+				</div>
+				
+
+			</div>
+				<div class="publish_con">
+				<div class="pulish_list">
+					<div class="pulish_list_left">
+					<span>年龄</span>
+					<span><input type="text" name="nian"  class="input_num"/></span>
+					</div>
+				</div>
+				<div class="pulish_list">
+					<span class="sex">性别</span>
+				<div class="pulish_list_left1">
+			<span class="mui_fen_butoon clear">				
+			<div class="mui-radio mui-left mui_radio_listem" >			
+				<label>男</label>
+				<input name="radio1" type="radio" value="男 "  >			
+				</div>
+			<div class=" mui-radio mui-left  mui_radio_listem">						
+            <input name="radio1" type="radio" value="女">
+						<label>女</label>
+					</div>
+                </span>
+				</div>
+			</div>
+			<button id='submit1' type="button" class="mui-btn mui-btn-green">提交</button>
+		</div>
+		</div>
+		<script type="text/javascript" src="../public/js/mui.js" ></script>
+		<script type="text/javascript" src="../public/js/feedback.js" ></script>
+	<script type="text/javascript" src="../public/js/feedback-page.js" ></script>
+		<script type="text/javascript" src="../public/js/app.js" ></script>
+		<script type="text/javascript" src="../public/js/zepto.min.js" ></script>
+	   <script type="text/javascript" src="../public/js/publish.js" ></script>
+		<script>
+			mui.init()
+		</script>
+	</body>
+</html>

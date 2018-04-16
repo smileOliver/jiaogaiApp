@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="Access-Control-Allow-Origin" content="">
+        <meta http-equiv="content-security-policy">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>编辑个人信息</title>
+		<link rel="stylesheet" href="../public/css/mui.css" />
+		<script>
+		 	var html=document.documentElement;
+		 	var w = window.outerWidth || screen.width; if (w > 720){w='720'};
+		 	var fontSize = w/16 + 'px';html.style.fontSize =fontSize;
+		 </script>
+		 <link rel="stylesheet" href="../public/css/register.css" />
+		 <link rel="stylesheet" href="../public/css/myapp.css" />
+		  <link rel="stylesheet" href="../public/css/notes.css"/>
+		 <style>
+		 	 .radio_inline{
+                display: inline-block;
+                width: 65%;
+            }
+            .radio_inline label{
+                width: 20%;
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+            .radio_inline input[type=radio]{
+                width: 15%;             
+                right: auto;
+            }
+            .tab_bd_select{
+            	margin-top: -0.92rem;
+            	margin-bottom: 0.22rem;
+            }
+            .mui-content{
+		 		margin-top: 2.0rem;
+		 		margin-bottom: 2.0rem;
+		 	}
+		 </style>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		<h1 class="mui-title">编辑个人信息</h1>
+		</header>
+		<form id="myInfo">
+		<div class="mui-content">
+		   <div class="register_con" style="margin-top: 0;" id="res">
+		   </div>
+		   <div class="register_con" style="margin-top: 10px;" id="res1">
+		   </div>
+		   <button type="button"  id="register_button" onclick="submitBtn()">提交</button>
+		</div>
+		</form>
+	   <script type="text/javascript" src="../public/js/mui.js" ></script>
+	   <script type="text/javascript" src="../public/js/app.js" ></script>
+	   <script type="text/javascript" src="../public/js/zepto.min.js"></script>
+	   <script type="text/javascript" src="../public/js/editInfo.js" ></script>
+	</body>
+</html>

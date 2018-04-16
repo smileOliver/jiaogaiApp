@@ -1,0 +1,163 @@
+@charset "UTF-8";
+$ppr:720/16/1rem;
+.mui_input input{
+    width: 500/$ppr;
+    height:50/$ppr;
+    background:white;
+    border-radius: 20/$ppr;
+    position: absolute;
+    padding: 0;
+    top:33/$ppr;
+    left:110/$ppr;
+    padding-left:20/$ppr;
+    font-size: 26/$ppr;
+}
+.mui_input_left{
+    width:2/$ppr;
+    height:40/$ppr;
+    background:white;
+    position: absolute;
+    top:35/$ppr;
+    left:630/$ppr;
+}
+.sou{
+    width: 40/$ppr;
+    height: 40/$ppr;
+    position:absolute;
+    top:35/$ppr;
+    left:650/$ppr;
+  img{
+    width: 100%;  
+  }  
+}
+.Baike_con{
+    width: 100%;
+    background: white;
+    margin-top: 20/$ppr;
+    padding-top: 36/$ppr;
+    padding-bottom:36/$ppr;
+    .Baike_con_top,.Baike_con_btn{
+        width:100%;
+        margin-top: 10/$ppr;    
+        .Baike_con_list{
+            float: left;
+            width: 33.3%;
+            .Baike_con_img{
+              width:120/$ppr;
+              height: 120/$ppr;
+               margin: auto;
+               border-radius: 50%;
+               background: #EFEFEF;
+               img{
+                   margin: auto;
+               }
+               
+            }
+            p{
+                text-align: center;
+                font-size: 24/$ppr;
+                color: #222222;
+                margin-top: 10/$ppr;
+            }
+        }
+    }
+}
+
+.mui_message{
+    width: 100%;
+    background: white;
+    margin-top: 20/$ppr;
+    padding-bottom: 10/$ppr;
+    .mui_message_photograph{
+        width:100/$ppr;
+        height:100/$ppr;
+        border-radius: 50%;
+       
+        float: left;
+        font-size:24/$ppr;
+       
+        text-align: center;
+        padding-top:8/$ppr;
+//      padding-bottom:10/$ppr;
+        margin-left: 30/$ppr;
+        
+        img{
+            width:80%;
+            display: inline-block;
+            margin-top:20/$ppr;
+        }
+     }
+        
+         
+}
+.message_left{
+    color: #D3A100;
+    border: 1px solid #D3A100;
+    box-sizing: border-box;
+    border-radius: 10/$ppr;
+    padding:2/$ppr 20/$ppr;
+}
+#up_zzjs{
+    height:100/$ppr;
+    line-height:100/$ppr;
+    overflow:hidden;
+    padding-left:10/$ppr;
+    
+    float: left;
+    color: #666;
+    margin-top: 30/$ppr;
+}
+#up_zzjs #up_li{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    margin-left:12/$ppr;
+}
+#up_zzjs #up_li a{
+    font-size:28/$ppr; 
+    line-height:50/$ppr;
+    font-weight: bold;
+    color: #666;
+}
+.mui_news{
+    margin-top: 10/$ppr;
+    padding-bottom: 100/$ppr;
+}
+.index_icon{
+    width:48/$ppr;
+    height:48/$ppr;
+    background:url(../image/shouyeb.png) no-repeat;
+    background-size:100%;
+}
+.index_icon.active{
+    background: url(../image/shouye.png) no-repeat;
+}
+.notes_icon{
+    width:48/$ppr;
+    height:48/$ppr;
+    background:url(../image/bijia.png) no-repeat;
+    background-size:100%;
+}
+.notes_icon.active{
+    background: url(../image/bijic.png) no-repeat;
+}
+.community_icon{
+     width:48/$ppr;
+    height:48/$ppr;
+    background:url(../image/shequ.png) no-repeat;
+    background-size:100%;
+}
+.community_icon.active{
+
+    background:url(../image/shequc.png) no-repeat;
+  
+}
+.my_icon{
+    width: 48/$ppr;
+    height: 48/$ppr;
+    background: url(../image/myicon.png);
+    background-size: 100%;
+}
+.my_icon.active{
+    background: url(../image/myb.png);
+}

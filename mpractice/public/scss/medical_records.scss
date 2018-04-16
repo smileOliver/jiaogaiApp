@@ -1,0 +1,25 @@
+$ppr:720/16/1rem;
+.medical_top{
+    width: 100%;
+   
+    margin-top: 20/$ppr;
+    .medical_top_list{
+        text-align: center;
+        color:#222222;
+         background: white;
+         width: 100%;
+         line-height: 60/$ppr;
+         height: 60/$ppr;
+        .medical_con{
+            width: 100%;
+           
+            .medical_meu_list{
+                width: 100%;
+                background: white;
+                height: 60/$ppr;
+                line-height: 60/$ppr;
+                margin-top: 2/$ppr;
+            }
+        }
+    }
+}

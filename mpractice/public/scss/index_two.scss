@@ -1,0 +1,157 @@
+$ppr:720/16/1rem;
+.mui_banner_con{
+   width: 100%;
+    background:white; 
+     padding-top:20/$ppr;
+    padding-bottom: 60/$ppr;
+}
+.mui_banner{
+    
+   margin-top: 30/$ppr;
+    
+    .mui_banner_list{
+        float: left;
+        width: 25%;
+        .mui_banner_list_img{
+            width: 100/$ppr;
+            height: 100/$ppr;
+            border-radius: 50%;
+            margin: auto;        
+        }
+        .mui_banner_list_text{
+            text-align: center;
+            font-size:28/$ppr;
+            color: #222222;
+            margin-top:10/$ppr;
+        }
+        .clolor1{
+            background:#4EC5FB;
+            img{
+                display: inline-block;
+                width:60/$ppr;
+                height: 62/$ppr;
+                margin-left: 20/$ppr;
+               margin-top:18/$ppr;
+            }
+        }
+        .clolor2{
+            background:#C1A973;
+            img{
+                display: inline-block;
+                width: 60/$ppr;
+                height: 60/$ppr;
+                margin-left: 20/$ppr;
+               margin-top:18/$ppr;
+            }
+        }
+        .clolor3{
+            background:#8ED482;
+            img{
+                display: inline-block;
+                width:52/$ppr;
+                height: 60;
+                margin-left:30/$ppr;
+               margin-top:20/$ppr;
+            }
+        }
+        .clolor4{
+            background:#8583D7;
+            img{
+                display: inline-block;
+                width:60/$ppr;
+                height: 60;
+                margin-left:20/$ppr;
+               margin-top:20/$ppr;
+            }
+        }
+        .clolor5{
+            background:#BE7D70;
+             img{
+                display: inline-block;
+                width:60/$ppr;
+                height: 60/$ppr;
+                margin-left:20/$ppr;
+               margin-top:20/$ppr;
+            }
+        }
+        .clolor6{
+            background:#BE649C;
+             img{
+                display: inline-block;
+                width:60/$ppr;
+                height:40/$ppr;
+                margin-left:20/$ppr;
+               margin-top:30/$ppr;
+            }
+        }
+         .clolor7{
+            background:#908666;
+             img{
+                display: inline-block;
+                width:60/$ppr;
+                height:60/$ppr;
+                margin-left:20/$ppr;
+               margin-top:20/$ppr;
+            }
+        }
+        .clolor8{
+            background:#C48B5B;
+             img{
+                display: inline-block;
+                width:60/$ppr;
+                height:60/$ppr;
+                margin-left:20/$ppr;
+               margin-top:20/$ppr;
+            }
+        }
+    }
+}
+.index_con_seasons{
+    width: 100%;
+    margin-top: 20/$ppr;
+    background: white;
+    padding-top: 20/$ppr;
+    .index_con_text{
+        font-size: 32/$ppr;
+        color: #D3A100;
+        margin-left: 30/$ppr;
+    }
+    .index_con_center{
+        width: 100%;
+        margin-top: 20/$ppr;
+        .index_con_list{
+         width:90%;
+         margin-top: 20/$ppr;
+         border-bottom:1px solid #AAAAAA;
+         margin: auto;
+         box-sizing: border-box;
+         padding-bottom: 20/$ppr;
+         .index_list_left{
+             float: left;
+             width:90/$ppr;
+             height: 90/$ppr;
+           
+             img{
+                 width: 100%;
+             }
+         }
+         .index_list_right{         
+             float: left;
+             margin-left:120/$ppr;
+             margin-top: -90/$ppr;
+         }   
+        }
+    }
+}
+.index_list_right_top{
+    
+    .index_list_right_list{
+        float: left;
+        font-size: 28/$ppr;
+        border-right: 1px solid #AAAAAA;
+        padding-right:11/$ppr;
+        margin-left:11/$ppr;
+        text-align: center;
+        box-sizing: border-box;
+    }
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>首页</title>
+		<link rel="stylesheet" href="../public/css/mui.css" />
+		<script>
+		 	var html=document.documentElement;
+		 	var w = window.outerWidth || screen.width; if (w > 720){w='720'};
+		 	var fontSize = w/16 + 'px';html.style.fontSize =fontSize;
+		 </script>
+		 <link rel="stylesheet" href="../public/css/index.css"/>
+		 <link rel="stylesheet" href="../public/css/myapp.css" />
+		 <link rel="stylesheet" href="../public/css/iconfont.css" />
+		 <style>
+		 	.mui_bttom{
+		 		background:white !important;
+		 	}
+		 input[type='search']{
+		 	width:100%;
+		 	/*padding: 10px 25%!important;*/
+		 	background: rgba(26,26,26 .3);
+		 }
+		 </style>
+	</head>
+	<body>		
+	
+		<nav id="footer" class="mui-bar mui-bar-tab mui_bttom">
+			<a class="mui-tab-item mui-active" href="index.html">
+				<span class="mui-icon icon iconfont icon-homepage"></span>
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<a class="mui-tab-item" href="notes.html">
+				<span class="mui-icon icon iconfont icon-activity"></span>
+				<span class="mui-tab-label">申报</span>
+			</a>
+			<a class="mui-tab-item" href="project.html">
+				<span class="mui-icon icon iconfont icon-group"></span>
+				<span class="mui-tab-label">项目</span>
+			</a>
+			<a class="mui-tab-item" href="myindex.html">
+				<span class="mui-icon icon iconfont icon-people"></span>
+				<span class="mui-tab-label">我的</span>
+			</a>			
+		</nav>
+		<!--底部导航-->
+		
+		<div id="pullrefresh" class="mui-scroll-wrapper">
+			
+			<div class="mui-scroll">
+			<div id="tabbar" class="mui-control-content mui-active">
+			   <div id="slider" class="mui-slider">
+			   		<!--<div class="mui-input-row mui-search">
+					<input type="search" class="mui-input-clear" placeholder="请输入科室,穴位">
+				    </div>-->
+					<div class="mui-slider-group mui-slider-loop" id="photo">
+					
+						<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+						<div class="mui-slider-item mui-slider-item-duplicate">
+							<a href="#">
+							   <img src="../public/image/bo8.jpg">
+							</a>
+						</div>
+						<!-- 第一张 -->
+						<div class="mui-slider-item">
+							<a href="#">
+								 <img src="../public/image/bo2.jpg">
+							</a>
+						</div>
+						<!-- 第二张 -->
+						<div class="mui-slider-item">
+							<a href="#">
+							 <img src="../public/image/bo3.jpg">
+							</a>
+						</div>
+						<!-- 第三张 -->
+						<div class="mui-slider-item">
+							<a href="#">
+								 <img src="../public/image/bo9.jpg">
+							</a>
+						</div>
+						<!-- 第四张 -->
+						<div class="mui-slider-item">
+							<a href="#">
+								 <img src="../public/image/bo7.jpg">
+							</a>
+						</div>
+						<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+						<div class="mui-slider-item mui-slider-item-duplicate">
+							<a href="#">
+								<img src="../public/image/bo2.jpg">
+							</a>
+						</div>
+					</div>
+					<div class="mui-slider-indicator" id="dian">
+						<div class="mui-indicator mui-active"></div>
+						<div class="mui-indicator"></div>
+						<div class="mui-indicator"></div>
+						<div class="mui-indicator"></div>
+					</div>
+					<!--以上是banner-->
+				</div>
+				<!--六大百科-->
+				<div class="mui_message clear" >
+					<div class="mui_message_photograph" id="notice">
+			        	公告信息
+					</div>
+					<div class="Baike_con" id="marqueebox">
+					</div>
+				</div>
+				<div>
+					<div class="mTitle" >申报信息</div>
+					<div class="mui-content mui-scroll-wrapper" id="pullrefresh">           
+				    <div class="mui-scroll">
+				        <ul  class="mui-table-view">
+				        </ul>
+				    </div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+		<script src="../public/js/mui.js"></script>
+		<script type="text/javascript" src="../public/js/zepto.min.js" ></script>
+		<script type="text/javascript" src="../public/js/app.js" ></script>
+		<script type="text/javascript" src="../public/js/jquery-1.12.3.js" ></script>
+		<script type="text/javascript"src="../public/js/index.js"></script>
+		<script>
+		
+		var slider = mui("#slider");
+		slider.slider({
+			interval: 0
+		});
+		mui.plusReady(function() {
+			 plus.navigator.closeSplashscreen();
+			document.addEventListener("netchange", wainshow, false);
+			
+		});
+	
+		function wainshow() {
+			if(plus.networkinfo.getCurrentType() == plus.networkinfo.CONNECTION_NONE) {
+				mui.toast("网络异常，请检查网络设置！");
+	
+			} else {
+	
+			}
+		}
+		
+		//底部跳转事件
+		mui('#footer').on('tap', 'a', function() {
+			var id = this.getAttribute("data-wid");
+			if(!id) {
+				id = this.getAttribute('href');
+			}
+			var href = this.getAttribute('href');
+
+			//非plus环境，直接走href跳转
+			if(!mui.os.plus) {
+				location.href = href;
+				return;
+			}
+			mui.openWindow({
+				id: href,
+				url: href,
+				styles: {
+					popGesture: "none"
+				},
+				show: {
+					aniShow: 'none'
+				},
+				waiting: {
+					autoShow: false
+				}
+			});
+		});
+		/*以上是mui初始化*/		
+		
+		 var notice=$('#notice')[0]
+		 
+		 notice.addEventListener("tap",function(){
+		 	mui.openWindow({
+				url:'notice.html'			
+			});
+		 })
+		 
+		</script>
+	</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta http-equiv="Access-Control-Allow-Origin" content="">
+        <meta http-equiv="content-security-policy">
+		<title>项目</title>
+		<link rel="stylesheet" href="../public/css/mui.css" />
+		<link rel="stylesheet" href="../public/css/swiper.css" />
+		<link rel="stylesheet" href="../public/css/iconfont.css" />
+		<script>
+		 	var html=document.documentElement;
+		 	var w = window.outerWidth || screen.width; if (w > 720){w='720'};
+		 	var fontSize = w/16 + 'px';html.style.fontSize =fontSize;
+		 </script>
+		<link rel="stylesheet" href="../public/css/project.css"/>
+		 <link rel="stylesheet" href="../public/css/myapp.css" />
+		 <script type="text/javascript" src="../public/js/swiper.min.js" ></script>
+		 <style>
+		 	#pullrefresh{
+		 		margin-top:10px;
+		 		background: white; 
+		 		text-align: left;
+		 	}
+		 </style>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav" id="header">
+	         <a class="mui-action-back"></a>
+			<h1 class="mui-title">我的项目</h1>
+		</header>
+	    	<div class="select_di" style="background: white;margin-top: 55px;margin-bottom: 0;">
+			<select class="select_xz" onchange="chonseProject()">
+				<option value="">全部项目</option>
+				<option value="0">未提交</option>
+				<option value="2">已查看</option>
+				<option value="1">未查看</option>
+				<option value="3">已通过</option>
+				<option value="4">未通过</option>
+				<option value="5">经费已审批</option>
+			</select>
+		</div>
+		<div class="mui-content mui-scroll-wrapper" id="pullrefresh">           
+		    <div class="mui-scroll">
+		        <ul  class="mui-table-view" id="newsMore">
+		        </ul>
+			</div>
+		</div>
+	   <nav id="footer" class="mui-bar mui-bar-tab mui_bttom">
+			<a class="mui-tab-item" href="index.html">
+				<span class="mui-icon icon iconfont icon-homepage "></span>
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<a class="mui-tab-item " href="notes.html">
+				<span class="mui-icon icon iconfont icon-activity"></span>
+				<span class="mui-tab-label">申报</span>
+			</a>
+			<a class="mui-tab-item mui-active" href="project.html">
+				<span class="mui-icon icon iconfont icon-group"></span>
+				<span class="mui-tab-label">项目</span>
+			</a>
+			<a class="mui-tab-item" href="myindex.html">
+				<span class="mui-icon icon iconfont icon-people"></span>
+				<span class="mui-tab-label">我的</span>
+			</a>			
+		</nav>
+	 	<script type="text/javascript" src="../public/js/jquery-1.10.1.min.js" ></script>
+		<script type="text/javascript" src="../public/js/mui.js" ></script>
+		<script type="text/javascript" src="../public/js/app.js" ></script>
+		<script type="text/javascript" src="../public/js/zepto.min.js" ></script>
+        <script type="text/javascript" src="../public/js/project.js" ></script>
+		<script>
+		mui.init({
+			swipeBack: true //启用右滑关闭功能
+		});
+		var slider = mui("#slider");
+		slider.slider({
+			interval: 0
+		});
+		
+	
+		/*function wainshow() {
+			if(plus.networkinfo.getCurrentType() == plus.networkinfo.CONNECTION_NONE) {
+				mui.toast("网络异常，请检查网络设置！");
+	
+			} else {
+	
+			}
+		}*/
+		//底部跳转事件
+		mui('#footer').on('tap', 'a', function() {
+			var id = this.getAttribute("data-wid");
+			if(!id) {
+				id = this.getAttribute('href');
+			}
+			var href = this.getAttribute('href');
+
+			//非plus环境，直接走href跳转
+			if(!mui.os.plus) {
+				location.href = href;
+				return;
+			}
+			mui.openWindow({
+				id: href,
+				url: href,
+				styles: {
+					popGesture: "none"
+				},
+				show: {
+					aniShow: 'none'
+				},
+				waiting: {
+					autoShow: false
+				}
+			});
+		});
+
+/************以上是头部************/  
+xmswiper('#notes_views');
+xmswiper('#Ti');
+function xmswiper(ele){
+	 new Swiper(ele+' .swiper-container',{
+		slidesPerView:6,
+		loop:false,
+		spaceBetween:6
+	});
+}
+	
+		
+		</script>
+	</body>
+</html>

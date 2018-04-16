@@ -1,0 +1,21 @@
+.collarteral_list_content {
+  width: 100%;
+  margin-top: 0.44444rem;
+  background: white;
+  padding-top: 0.44444rem; }
+  .collarteral_list_content .collarteral_list_img {
+    width: 100%; }
+    .collarteral_list_content .collarteral_list_img img {
+      width: 100%; }
+  .collarteral_list_content .collarteral_list_center {
+    width: 100%; }
+    .collarteral_list_content .collarteral_list_center .collarteral_list_center_list1 {
+      color: #AAAAAA;
+      font-size: 0.62222rem;
+      margin-left: 0.66667rem; }
+    .collarteral_list_content .collarteral_list_center .collarteral_list_center_list {
+      color: #222222;
+      font-size: 0.62222rem;
+      margin-left: 0.66667rem; }
+
+/*# sourceMappingURL=collaterall_list.css.map */

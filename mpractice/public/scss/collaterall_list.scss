@@ -1,0 +1,27 @@
+@charset "UTF-8";
+$ppr:720/16/1rem;
+.collarteral_list_content{
+    width: 100%;
+    margin-top: 20/$ppr;
+    background: white;
+    padding-top: 20/$ppr;
+    .collarteral_list_img{
+       width: 100%;
+       img{
+           width: 100%;
+       } 
+    }
+    .collarteral_list_center{
+        width: 100%;
+        .collarteral_list_center_list1{
+            color:#AAAAAA;
+            font-size: 28/$ppr;
+            margin-left: 30/$ppr;
+        }
+        .collarteral_list_center_list{
+             color:#222222;
+            font-size:28/$ppr;
+            margin-left: 30/$ppr;
+        }
+    }
+}

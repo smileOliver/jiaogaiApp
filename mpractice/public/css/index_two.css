@@ -1,0 +1,126 @@
+.mui_banner_con {
+  width: 100%;
+  background: white;
+  padding-top: 0.44444rem;
+  padding-bottom: 1.33333rem; }
+
+.mui_banner {
+  margin-top: 0.66667rem; }
+  .mui_banner .mui_banner_list {
+    float: left;
+    width: 25%; }
+    .mui_banner .mui_banner_list .mui_banner_list_img {
+      width: 2.22222rem;
+      height: 2.22222rem;
+      border-radius: 50%;
+      margin: auto; }
+    .mui_banner .mui_banner_list .mui_banner_list_text {
+      text-align: center;
+      font-size: 0.62222rem;
+      color: #222222;
+      margin-top: 0.22222rem; }
+    .mui_banner .mui_banner_list .clolor1 {
+      background: #4EC5FB; }
+      .mui_banner .mui_banner_list .clolor1 img {
+        display: inline-block;
+        width: 1.33333rem;
+        height: 1.37778rem;
+        margin-left: 0.44444rem;
+        margin-top: 0.4rem; }
+    .mui_banner .mui_banner_list .clolor2 {
+      background: #C1A973; }
+      .mui_banner .mui_banner_list .clolor2 img {
+        display: inline-block;
+        width: 1.33333rem;
+        height: 1.33333rem;
+        margin-left: 0.44444rem;
+        margin-top: 0.4rem; }
+    .mui_banner .mui_banner_list .clolor3 {
+      background: #8ED482; }
+      .mui_banner .mui_banner_list .clolor3 img {
+        display: inline-block;
+        width: 1.15556rem;
+        height: 60;
+        margin-left: 0.66667rem;
+        margin-top: 0.44444rem; }
+    .mui_banner .mui_banner_list .clolor4 {
+      background: #8583D7; }
+      .mui_banner .mui_banner_list .clolor4 img {
+        display: inline-block;
+        width: 1.33333rem;
+        height: 60;
+        margin-left: 0.44444rem;
+        margin-top: 0.44444rem; }
+    .mui_banner .mui_banner_list .clolor5 {
+      background: #BE7D70; }
+      .mui_banner .mui_banner_list .clolor5 img {
+        display: inline-block;
+        width: 1.33333rem;
+        height: 1.33333rem;
+        margin-left: 0.44444rem;
+        margin-top: 0.44444rem; }
+    .mui_banner .mui_banner_list .clolor6 {
+      background: #BE649C; }
+      .mui_banner .mui_banner_list .clolor6 img {
+        display: inline-block;
+        width: 1.33333rem;
+        height: 0.88889rem;
+        margin-left: 0.44444rem;
+        margin-top: 0.66667rem; }
+    .mui_banner .mui_banner_list .clolor7 {
+      background: #908666; }
+      .mui_banner .mui_banner_list .clolor7 img {
+        display: inline-block;
+        width: 1.33333rem;
+        height: 1.33333rem;
+        margin-left: 0.44444rem;
+        margin-top: 0.44444rem; }
+    .mui_banner .mui_banner_list .clolor8 {
+      background: #C48B5B; }
+      .mui_banner .mui_banner_list .clolor8 img {
+        display: inline-block;
+        width: 1.33333rem;
+        height: 1.33333rem;
+        margin-left: 0.44444rem;
+        margin-top: 0.44444rem; }
+
+.index_con_seasons {
+  width: 100%;
+  margin-top: 0.44444rem;
+  background: white;
+  padding-top: 0.44444rem; }
+  .index_con_seasons .index_con_text {
+    font-size: 0.71111rem;
+    color: #D3A100;
+    margin-left: 0.66667rem; }
+  .index_con_seasons .index_con_center {
+    width: 100%;
+    margin-top: 0.44444rem; }
+    .index_con_seasons .index_con_center .index_con_list {
+      width: 90%;
+      margin-top: 0.44444rem;
+      border-bottom: 1px solid #AAAAAA;
+      margin: auto;
+      box-sizing: border-box;
+      padding-bottom: 0.44444rem; }
+      .index_con_seasons .index_con_center .index_con_list .index_list_left {
+        float: left;
+        width: 2rem;
+        height: 2rem; }
+        .index_con_seasons .index_con_center .index_con_list .index_list_left img {
+          width: 100%; }
+      .index_con_seasons .index_con_center .index_con_list .index_list_right {
+        float: left;
+        margin-left: 2.66667rem;
+        margin-top: -2rem; }
+
+.index_list_right_top .index_list_right_list {
+  float: left;
+  font-size: 0.62222rem;
+  border-right: 1px solid #AAAAAA;
+  padding-right: 0.24444rem;
+  margin-left: 0.24444rem;
+  text-align: center;
+  box-sizing: border-box; }
+
+/*# sourceMappingURL=index_two.css.map */

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>绑定手机</title>
+		<link rel="stylesheet" href="../public/css/mui.css" />
+		<script>
+		 	var html=document.documentElement;
+		 	var w = window.outerWidth || screen.width; if (w > 720){w='720'};
+		 	var fontSize = w/16 + 'px';html.style.fontSize =fontSize;
+		 </script>
+		 <link rel="stylesheet" href="../public/css/register.css" />
+		 <link rel="stylesheet" href="../public/css/myapp.css" />
+		 <style>
+		 	.register_con{
+		 		padding-bottom: 0;
+		 	}
+		 	.register_con_list{
+		 		height: 50px;
+		 		padding-top: 10px;
+		 	}
+		 	.button_password{
+		 		width: 90%;
+		 		margin: auto;
+		 		margin-top: 20px;
+		 		
+		 	}
+		 	.button_password button{
+		 		width:100%;
+		 		font-size: 18px;
+		 		padding-top: 7px;
+		 		padding-bottom: 7px;
+		 		background: #169eeb;
+		 		outline: none;
+		 		border: none;
+		 		border-radius: 10px;
+		 		color: white;
+		 	}
+		 	.mui-content{
+		 		margin-top: 2.2rem;
+		 	}
+		 </style>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		<h1 class="mui-title">换绑手机</h1>
+		</header>
+		<div class="mui-content">
+		   <div class="register_con" style="margin-top: 0;">
+		   	   
+		   	   <div class="register_con_list">
+		   	   	 <input type="tel" name="tTel" id="tTel" placeholder="请输入手机号"
+		   	   		onblur="telblur()" />	   	   	
+		   	   </div>
+		   	  	<div class="register_con_list" style="border-bottom: none;">
+		   	   	<input type="text"  id="scode" placeholder="请输入验证码"style="width:170px;" 
+		   	   		onblur="scodeblur()" />		
+		   	   	<button type="button" class="register_num yzm" id="btn" onclick="sendyzm()">获取验证码</button>
+		   	   </div>	 
+		   </div>
+		      <div class="button_password">
+		      	<button value="绑定" id="button_d" onclick="updateTel()">绑定</button>
+		      </div>
+		   </div>
+		   <script src="../public/js/mui.js"></script>
+		   <script type="text/javascript" src="../public/js/zepto.min.js" ></script>
+		   <script type="text/javascript" src="../public/js/app.js" ></script>
+		   <script type="text/javascript" src="../public/js/register.js" ></script>
+		   <script>
+		   	var id=localStorage.getItem("teacherId");
+		   	function updateTel(){
+		   		$.ajax({
+		   			type:"post",
+		   			url:getRootPath+"/teacher/updateTel",
+		   			data:{
+						"id":id,
+						"tTel":$("#tTel").val()
+		   			},
+		   			success:function(result){
+		   				if(result.success){
+		   					mui.toast("手机号换绑成功");
+		   					jump("shezhi");
+		   				}else{
+		   					mui.toast(result.msg);
+		   				}
+		   			}
+		   		});
+		   	}
+		   </script>
+	</body>
+</html>

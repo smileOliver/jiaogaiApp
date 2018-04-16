@@ -1,0 +1,21 @@
+.guideline_con {
+  width: 100%;
+  background: white;
+  margin-top: 0.44444rem; }
+  .guideline_con .guideline_left {
+    width: 50%;
+    float: left;
+    margin: auto; }
+    .guideline_con .guideline_left .guideline_left_img {
+      margin-top: 0.66667rem; }
+      .guideline_con .guideline_left .guideline_left_img img {
+        width: 3.11111rem;
+        height: 3.11111rem;
+        margin: auto; }
+    .guideline_con .guideline_left .guideline_text {
+      font-size: 0.66667rem;
+      color: #222222;
+      text-align: center;
+      margin-top: 0.44444rem; }
+
+/*# sourceMappingURL=guideline.css.map */

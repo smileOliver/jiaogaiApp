@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>忘记密码</title>
+		<link rel="stylesheet" href="../public/css/mui.css" />
+		<script>
+		 	var html=document.documentElement;
+		 	var w = window.outerWidth || screen.width; if (w > 720){w='720'};
+		 	var fontSize = w/16 + 'px';html.style.fontSize =fontSize;
+		 </script>
+		 <link rel="stylesheet" href="../public/css/register.css" />
+		 <link rel="stylesheet" href="../public/css/myapp.css" />
+	     <style>
+	     	button{
+	     		outline: none;
+	     		border: none;
+	     		
+	     	}
+	     	.mui-content{
+		 		margin-top: 2.0rem;
+		 	}
+	     </style>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		<h1 class="mui-title">修改密码</h1>
+		</header>
+		<div class="mui-content">
+			<div class="register_con" style="padding-bottom: 30px;">
+			   <div class="register_con_list">
+		   	   	<input type="password" name="newpwd" id="tPassword" placeholder="新密码" style="width:240px;margin-top: 5px;"
+		   	   		onblur="passwordblur()">
+		   	   </div>
+		   	   <div class="register_con_list">
+		   	   	<input type="password" name="pwd" id="tPassword2" placeholder="再次输入密码" style="width:240px;margin-top: 5px;"
+		   	   		onblur="passwordblur2()">		   	   	
+		   	   </div>		   	     
+			</div>
+			 <button value="完成" id="register_button" onclick="updatePassword()">完成</button>
+		</div>
+  <script src="../public/js/mui.js"></script>
+  <script type="text/javascript" src="../public/js/zepto.min.js" ></script>
+  <script type="text/javascript" src="../public/js/app.js" ></script>
+  <script type="text/javascript" src="../public/js/register.js" ></script>
+  <script>
+  	function updatePassword(){
+    	var tTel =localStorage.getItem("tTel");
+  		if($("#tPassword").val()==null || $("#tPassword").val()==''){
+  			mui.toast("密码不能为空");
+  		}else if($("#tPassword2").val()==null || $("#tPassword2").val()==''){
+  			mui.toast("确认密码不能为空");
+  		}else{
+  			$.ajax({
+  				type:"post",
+  				url:getRootPath+"/teacher/editPassword",
+  				data:{
+  					"tPassword":$("#tPassword").val(),
+  					"tTel":tTel
+  				},
+  				async:true,
+  				success:function(result){
+  					if(result.success){
+  						mui.toast("密码修改成功");
+  						mui.openWindow({
+							id: "login",
+							url: 'login.html',
+						});
+  					}else{
+  						mui.toast(result.msg);
+  					}
+  				}
+  			});
+  		}
+  	}
+  </script>
+</body>
+</html>

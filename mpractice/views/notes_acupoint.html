@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		  <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>取穴</title>
+		<link rel="stylesheet" href="../public/css/mui.css" />
+		<script>
+		 	var html=document.documentElement;
+		 	var w = window.outerWidth || screen.width; if (w > 720){w='720'};
+		 	var fontSize = w/16 + 'px';html.style.fontSize =fontSize;
+		 </script>
+        <!--<link rel="stylesheet" href="../public/css/swiper.css"/> -->
+		 <link rel="stylesheet" href="../public/css/add.css"/>
+		 <link rel="stylesheet" href="../public/css/myapp.css" />
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		<h1 class="mui-title">取穴</h1>
+		</header>
+		<div class="mui-content">
+			<div class="mui_tab clear">
+				<div class="mui_tab_hd">
+					<div class="mui_tab_hd_list active">急诊科</div>
+					<div class="mui_tab_hd_list">儿科</div>
+					<div class="mui_tab_hd_list">眼科</div>
+					<div class="mui_tab_hd_list">口腔科</div>
+					<div class="mui_tab_hd_list">皮肤科</div>
+					<div class="mui_tab_hd_list">泌尿科</div>
+					<div class="mui_tab_hd_list">内分泌科</div>
+					<div class="mui_tab_hd_list">肛肠科</div>
+					<div class="mui_tab_hd_list">神经内科</div>
+					<div class="mui_tab_hd_list">神经外科</div>
+					<div class="mui_tab_hd_list">骨科</div>
+				</div>
+				<div class="mui_tab_bd">
+					<div class="mui_bd_con" style="display: block;">	
+						<div class="mui_bd_table">
+							
+							<div class="mui_bd_con1 clear">
+								<div class="mui_bd_con_list">脊柱外科</div>
+								<div class="mui_bd_con_list">泌尿外科</div>
+								<div class="mui_bd_con_list">普外外科</div>	
+							</div>
+							<div class="mui_bd_con1 clear">
+								<div class="mui_bd_con_list">脊柱外科</div>
+								<div class="mui_bd_con_list">泌尿外科</div>
+								<div class="mui_bd_con_list">普外外科</div>	
+							</div>
+							<div class="mui_bd_con1 clear">
+								<div class="mui_bd_con_list">脊柱外科</div>
+								<div class="mui_bd_con_list">泌尿外科</div>
+								<div class="mui_bd_con_list">普外外科</div>	
+							</div>
+						</div>
+					</div>
+					<!--急诊科-->
+					<div class="mui_bd_con">						
+						<div class="mui_bd_table">			
+							<div class="mui_bd_con1 clear">
+								<div class="mui_bd_con_list">脊柱外科</div>
+								<div class="mui_bd_con_list">泌尿外科</div>
+								<div class="mui_bd_con_list">普外外科</div>	
+							</div>
+							<div class="mui_bd_con1 clear">
+								<div class="mui_bd_con_list">脊柱外科</div>
+								<div class="mui_bd_con_list">泌尿外科</div>
+								<div class="mui_bd_con_list">普外外科</div>	
+							</div>
+							<div class="mui_bd_con1 clear">
+								<div class="mui_bd_con_list">脊柱外科</div>
+								<div class="mui_bd_con_list">泌尿外科</div>
+								<div class="mui_bd_con_list">普外外科</div>	
+							</div>
+						</div>
+					</div>
+					<!--儿科-->
+				</div>
+			</div>
+		</div>
+	  <script type="text/javascript" src="../public/js/mui.js" ></script>
+	  <script src="../public/js/app.js"></script>
+	  <script type="text/javascript" src="../public/js/zepto.min.js" ></script>
+	 <script>
+		$(".mui_tab_hd_list").click(function(){
+			 var this_index = $(this).index();
+			 $(this).addClass("active").siblings().removeClass("active");
+             $(".mui_bd_con").eq(this_index).show().siblings().hide();
+
+		})
+	</script>
+	</body>
+</html>

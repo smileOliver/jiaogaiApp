@@ -1,0 +1,49 @@
+.all_content_tenter {
+  width: 100%; }
+  .all_content_tenter .mui_table_litem1 {
+    width: 100%;
+    mmargin-top: 0.04444rem;
+    background: white; }
+    .all_content_tenter .mui_table_litem1 .mui_table_top {
+      width: 100%;
+      padding-bottom: 0.44444rem;
+      margin-top: 0.04444rem; }
+      .all_content_tenter .mui_table_litem1 .mui_table_top .mui_table_top_left {
+        float: left;
+        margin-left: 0.66667rem; }
+        .all_content_tenter .mui_table_litem1 .mui_table_top .mui_table_top_left img {
+          display: inline-block;
+          width: 2.22222rem;
+          height: 2.22222rem;
+          border-radius: 50%;
+          margin-top: 0.44444rem; }
+      .all_content_tenter .mui_table_litem1 .mui_table_top .mui_table_top_text {
+        float: left;
+        font-size: 0.71111rem;
+        color: #D3A100;
+        margin-top: 0.66667rem;
+        margin-left: 0.66667rem; }
+      .all_content_tenter .mui_table_litem1 .mui_table_top .mui_table_right {
+        float: right;
+        margin-right: 0.66667rem;
+        font-size: 0.62222rem;
+        margin-top: 0.66667rem; }
+        .all_content_tenter .mui_table_litem1 .mui_table_top .mui_table_right img {
+          width: 0.53333rem;
+          display: inline-block; }
+
+.mui_table_center {
+  width: 78%;
+  margin-left: 3.33333rem;
+  float: left;
+  margin-top: -1.11111rem;
+  font-size: 0.62222rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical; }
+  .mui_table_center .fangan {
+    color: #768564; }
+
+/*# sourceMappingURL=my_notes.css.map */

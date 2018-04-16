@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+	<head>
+	   <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>申报</title>
+		<link rel="stylesheet" href="../public/css/mui.css" />
+		<script>
+		 	var html=document.documentElement;
+		 	var w = window.outerWidth || screen.width; if (w > 720){w='720'};
+		 	var fontSize = w/16 + 'px';html.style.fontSize =fontSize;
+		 </script>
+         <link rel="stylesheet" href="../public/css/swiper.css"/> 
+		 <link rel="stylesheet" href="../public/css/notes.css"/>
+		 <link rel="stylesheet" href="../public/css/myapp.css" />
+		 <link rel="stylesheet" href="../public/css/iconfont.css" />
+		<style>
+			#textarea{
+				width: 91%;
+				height: 70px;
+				margin-left: 15px;
+				color:#222222;
+				padding: 5px;
+				font-size: 16px;
+				border-radius: 10px;
+			}
+			#textarea1{
+				width: 91%;			
+				height: 30px;
+				line-height: 30px;
+				padding-left: 5px;
+				float: left;
+				border-radius:5px;
+				margin-left: 15px;
+			}
+			#textarea2{
+				width: 91%;
+	
+				height: 30px;
+				line-height: 30px;
+				padding-left: 5px;
+				float: left;
+				border-radius:5px;
+				margin-left: 15px;
+			}
+			#textarea3{
+				width: 91%;
+				height: 30px;
+				line-height:30px;
+			
+				color:#222222;
+				padding-left: 5px;
+				font-size: 16px;
+				border-radius:5px;
+				margin-left: 15px;
+			}
+				#textarea4{
+				width: 91%;
+				margin-top:10px;
+				margin-left: 15px;
+				padding: 5px;
+			}
+			#textarea5{
+				width: 95%;
+				padding: 5px;
+				margin: auto;
+			}
+			#textarea_row{
+				width: 100%;
+				border: none;
+				padding:5px;
+			}
+			#notes_prescription{
+				width: 91%;
+				margin-left: 15px;
+				padding: 5px;
+			}
+			#notes_xinde{
+				border: none;
+				padding: 5px;
+				
+			}
+		</style> 
+	</head>
+	<body>		
+		<header class="mui-bar mui-bar-nav" id="header">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">申报</h1>
+		</header>
+		<nav id="footer" class="mui-bar mui-bar-tab mui_bttom">
+			<a class="mui-tab-item" href="index.html">
+				<span class="mui-icon icon iconfont icon-homepage "></span>
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<a class="mui-tab-item  mui-active" href="notes.html">
+				<span class="mui-icon icon iconfont icon-activity"></span>
+				<span class="mui-tab-label">申报</span>
+			</a>
+			<a class="mui-tab-item" href="project.html">
+				<span class="mui-icon icon iconfont icon-group"></span>
+				<span class="mui-tab-label">项目</span>
+			</a>
+			<a class="mui-tab-item" href="myindex.html">
+				<span class="mui-icon icon iconfont icon-people"></span>
+				<span class="mui-tab-label">我的</span>
+			</a>			
+		</nav>
+		<div class="mui-content" >
+		    <div class="tab_con">
+		    	<div class="tab_bd" style="padding-bottom:20px;">
+		    		<div class="tab_bd_con">
+	    		      	<div class="tab_bd_top clear">
+	    		      		<div class="tab_bd_top_text">教学改革与研究项目申请书</div>
+	    		      	</div>
+		    			<div class="tab1_bd">
+		    				<form action="" id="objectForm" method="post">
+		    					<div class="tab_bd_con1">
+							   	    <div class="tab_bd_con_list">
+								   	   	<span class="tab_bd_con_text">项目名称：</span>
+								   	   	<input type="text" class="notNull" name="pTitle" placeholder="必填"/>
+							   	    </div>
+							   	    <div class="tab_bd_con_list">
+								   	   	<span class="tab_bd_con_text">项目主持人：</span>
+								   	   	<input type="text" class="notNull" name="teacherName" placeholder="必填"/>
+							   	    </div>
+							   	    <div class="tab_bd_con_list">
+								   	   	<span class="tab_bd_con_text">项目成员：</span>
+								   	   	<input type="text"  name="groups"/>
+							   	    </div>
+							   	    <div class="tab_bd_con_list">
+								   	   	<span class="tab_bd_con_text">申请部门：</span>
+								   	   	<div class="tab_bd_select">
+									   	   	<select id="departmentId" name="declareDepartment"> 
+			   	   							</select>
+		   	   							</div>
+							   	    </div>
+							   	    <div class="tab_bd_con_list">
+								   	   	<span class="tab_bd_con_text">申报类别：</span>
+								   	   	<div class="tab_bd_select">
+									   	   	<select id="typeName" name="typeName"> 
+			   	   							</select>
+		   	   							</div>
+							   	    </div>
+							   	    <div class="tab_bd_con_list">
+								   	   	<span class="tab_bd_con_text">完成时间：</span>
+								   	   	<input type="text" class="notNull" name="endTime" placeholder="必填"/>
+							   	    </div>
+							   	    <div class="tab_bd_con_list">
+								   	   	<span class="tab_bd_con_text">申请时间：</span>
+								   	   	<input type="text" class="notNull applyTime" name="applyTime" placeholder="    年      月      日"/>
+							   	    </div>
+							   	</div>   
+			    				<div class="tab_bd_con1">
+			    					<div class="tab_bd_top clear">
+					    		      	<div class="tab_bd_top_text1">一、简表</div>
+					    		    </div>
+					    		    <div class="content_c1">
+					    		     	<div class="content_title">项目简况</div>
+					    		     	<div class="tab_bd_con_list">
+								   	   		<span class="tab_bd_con_text">起止年月：</span>
+								   	   		<input type="text" name="beginEndtime" placeholder="   年   月      至       年      月"/>
+							   	   		</div>
+					    		    </div>
+					    		    <div class="content_c1">
+					    		     	<div class="content_title">项目主持人</div>
+							   	   		<div class="content_text_t1">
+							   	   			<div class="tab1_bd_left">
+				    							<span class="tab1_bd_text">姓名：</span>
+				    							<input type="text"  id="time"/>
+			    							</div>
+				    						<div class="tab1_bd_right">
+				    							<div class="tab1_bd_right">性别：</div>
+				    							<input type="text" name="teacherSex" id="name" />
+				    						</div>
+							   	   		</div>	
+							   	   		<div class="tab_bd_con_list">
+								   	   		<span class="tab_bd_con_text">出生年月:</span>
+								   	   		<input type="text" name="teacherBirthday" placeholder="    年   月"/>
+							   	   		</div>
+							   	   		<div class="tab_bd_con_list">
+								   	   		<span class="tab_bd_con_text">所在部门:</span>
+								   	   		<input type="text" name="liveDepartment"/>
+							   	   		</div>
+							   	   		<div class="tab_bd_con_list">
+								   	   		<span class="tab_bd_con_text">电子邮箱:</span>
+								   	   		<input type="text" name="t_email"/>
+							   	   		</div>
+							   	   		<div class="tab_bd_con_list">
+								   	   		<span class="tab_bd_con_text">办公电话:</span>
+								   	   		<input type="text" name="workPhone"/>
+							   	   		</div>
+							   	   		<div class="tab_bd_con_list">
+								   	   		<span class="tab_bd_con_text">手&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;机:</span>
+								   	   		<input type="text" name="tTel"/>
+							   	   		</div>
+							   	   		<div class="tab_bd_con_list">
+							   	   			<span class="tab_bd_con_text">主要教学工作简历:</span>
+											<textarea id="textarea5" rows="5" style="color: #222222;" name="notesDialectical"></textarea>
+										</div>
+										<div class="tab_bd_con_list">
+							   	   			<span class="tab_bd_con_text">主要教学改革和研究成果:</span>
+											<div class="con_content_table">
+												<table border="1">
+												<tr>
+													<td>时间</td>
+													<td>项目名称</td>
+													<td>颁发部门</td>
+													<td>获奖等次</td>
+													<td>名次</td>
+												</tr>
+												<tr>
+													<td><input type="text" name="resultTime"></td>
+													<td><input type="text" name="resultPTitle"></td>
+													<td><input type="text" name="departmentName"></td>
+													<td><input type="text" name="award"></td>
+													<td><input type="text" name="grade"></td>
+												</tr>
+													<tr>
+													<td><input type="text" name="resultTime"></td>
+													<td><input type="text" name="resultPTitle"></td>
+													<td><input type="text" name="departmentName"></td>
+													<td><input type="text" name="award"></td>
+													<td><input type="text" name="grade"></td>
+												</tr>
+													<tr>
+													<td><input type="text" name="resultTime"></td>
+													<td><input type="text" name="resultPTitle"></td>
+													<td><input type="text" name="departmentName"></td>
+													<td><input type="text" name="award"></td>
+													<td><input type="text" name="grade"></td>
+												</tr>
+													<tr>
+													<td><input type="text" name="resultTime"></td>
+													<td><input type="text" name="resultPTitle"></td>
+													<td><input type="text" name="departmentName"></td>
+													<td><input type="text" name="award"></td>
+													<td><input type="text" name="grade"></td>
+												</tr>
+													<tr>
+													<td><input type="text" name="resultTime"></td>
+													<td><input type="text" name="resultPTitle"></td>
+													<td><input type="text" name="departmentName"></td>
+													<td><input type="text" name="award"></td>
+													<td><input type="text" name="grade"></td>
+												</tr>
+											</table>
+											</div>
+										</div>
+										<div class="content_title">项目组</div>
+										<div class="tab_bd_con_list">
+							   	   			<span class="tab_bd_con_text">主要成员:</span>
+											<div class="con_content_table2">
+													<table border="1">
+													<tr>
+														<td>姓名</td>
+														<td>出生年月</td>
+														<td>职称</td>
+														<td>工作单位</td>
+														<td>分工</td>
+														<td>签章</td>
+													</tr>
+													<tr>
+														<td><input type="text" name="gName"></td>
+														<td><input type="text" name="birthday"></td>
+														<td><input type="text" name="jobTitle"></td>
+														<td><input type="text" name="workUnit"></td>
+														<td><input type="text" name="fengong"></td>
+														<td><input type="text" name="qianzhang"></td>
+													</tr>
+													<tr>
+														<td><input type="text" name="gName"></td>
+														<td><input type="text" name="birthday"></td>
+														<td><input type="text" name="jobTitle"></td>
+														<td><input type="text" name="workUnit"></td>
+														<td><input type="text" name="fengong"></td>
+														<td><input type="text" name="qianzhang"></td>
+													</tr>
+													<tr>
+														<td><input type="text" name="gName"></td>
+														<td><input type="text" name="birthday"></td>
+														<td><input type="text" name="jobTitle"></td>
+														<td><input type="text" name="workUnit"></td>
+														<td><input type="text" name="fengong"></td>
+														<td><input type="text" name="qianzhang"></td>
+													</tr>
+													<tr>
+														<td><input type="text" name="gName"></td>
+														<td><input type="text" name="birthday"></td>
+														<td><input type="text" name="jobTitle"></td>
+														<td><input type="text" name="workUnit"></td>
+														<td><input type="text" name="fengong"></td>
+														<td><input type="text" name="qianzhang"></td>
+													</tr>
+													<tr>
+														<td><input type="text" name="gName"></td>
+														<td><input type="text" name="birthday"></td>
+														<td><input type="text" name="jobTitle"></td>
+														<td><input type="text" name="workUnit"></td>
+														<td><input type="text" name="fengong"></td>
+														<td><input type="text" name="qianzhang"></td>
+													</tr>
+													<tr>
+														<td><input type="text" name="gName"></td>
+														<td><input type="text" name="birthday"></td>
+														<td><input type="text" name="jobTitle"></td>
+														<td><input type="text" name="workUnit"></td>
+														<td><input type="text" name="fengong"></td>
+														<td><input type="text" name="qianzhang"></td>
+													</tr>
+												</table>
+											</div>
+					    		     	</div>
+			    					</div>
+			    					<div class="content_c1">
+				    					<div class="tab_bd_top clear">
+						    		      	<div class="tab_bd_top_text1 ">二、立项依据：（项目的意义、现状分析）</div>
+						    		    	<div class="tab_bd_con_list">
+												<textarea id="textarea5" rows="5" style="color: #222222;" name="according"></textarea>
+										</div>
+			    					</div>
+			    					<div class="content_c1">
+				    					<div class="tab_bd_top clear">
+						    		      	<div class="tab_bd_top_text1 ">三、项目实施方案及实施计划</div>
+						    		    	<div class="tab_bd_con_list">
+						    		    		<span class="tab_bd_con_text">1.具体改革内容、改革目标和拟解决的关键问题:</span>
+												<textarea id="textarea5" rows="5" style="color: #222222;" name="printOne"></textarea>
+						    		    	</div>
+						    		    	<div class="tab_bd_con_list">
+						    		    		<span class="tab_bd_con_text">2.实施方案、实施方法、具体实施计划（含年度进展情况）及可行性分析:</span>
+												<textarea id="textarea5" rows="5" style="color: #222222;" name="printTwo"></textarea>
+						    		    	</div>
+						    		    	<div class="tab_bd_con_list">
+						    		    		<span class="tab_bd_con_text">3.项目预期的成果和效果（包括成果形式、实施范围、受益学生数等）:</span>
+												<textarea id="textarea5" rows="5" style="color: #222222;" name="printThree"></textarea>
+						    		    	</div>
+						    		    	<div class="tab_bd_con_list">
+						    		    		<span class="tab_bd_con_text">4.本项目的特色与创新之处:</span>
+												<textarea id="textarea5" rows="5" style="color: #222222;" name="printFour"></textarea>
+						    		    	</div>
+						    		    </div>	
+			    					</div>
+			    					<div class="content_c1">
+				    					<div class="tab_bd_top clear">
+						    		      	<div class="tab_bd_top_text1 "> 四、教学改革基础</div>
+						    		    	<div class="tab_bd_con_list">
+						    		    		<span class="tab_bd_con_text">1.与本项目有关的教学改革工作积累和已取得的教学改革工作成绩（成绩须注明时间、颁发部门、获奖等次、名次等详细信息）:</span>
+												<textarea id="textarea5" rows="5" style="color: #222222;" name="basicsOne"></textarea>
+						    		    	</div>
+						    		    	<div class="tab_bd_con_list">
+						    		    		<span class="tab_bd_con_text">2.申请者和项目组成员所承担的教学改革和科研项目情况（注明承担项目立项时间、立项单位、参与名次及承担的主要工作）:</span>
+												<textarea id="textarea5" rows="5" style="color: #222222;" name="basicsTwo"></textarea>
+						    		    	</div>
+										</div>
+			    					</div>
+			    					<div class="content_c1">
+				    					<div class="tab_bd_top clear">
+						    		      	<div class="tab_bd_top_text1 "> 五、经费预算</div>
+						    		      	<div class="tab_bd_con_list">
+							    		    	<div class="con_content_table3">
+													<table border="1">
+													<tr>
+														<td>支出科目（含配套经费）</td>
+														<td>金额（元）</td>
+														<td>计算根据及理由</td>
+													</tr>
+													<tr>
+														<td>合计</td>
+														<td><input type="text" class="money0" name="budgetMoney"></td>
+														<td></td>
+													</tr>
+													<tr>
+														<td>1.<input type="text" name="subject"></td>
+														<td><input type="text" class="money1" name="money"></td>
+														<td><input type="text" name="reason"></td>
+													</tr>
+													<tr>
+														<td>2.<input type="text" name="subject"></td>
+														<td><input type="text" class="money2" name="money"></td>
+														<td><input type="text" name="reason"></td>
+													</tr><tr>
+														<td>3.<input type="text" name="subject"></td>
+														<td><input type="text" class="money3" name="money"></td>
+														<td><input type="text" name="reason"></td>
+													</tr><tr>
+														<td>4.<input type="text" name="subject"></td>
+														<td><input type="text" class="money4" name="money"></td>
+														<td><input type="text" name="reason"></td>
+													</tr><tr>
+														<td>5.<input type="text" name="subject"></td>
+														<td><input type="text" class="money5" name="money"></td>
+														<td><input type="text" name="reason"></td>
+													</tr><tr>
+														<td>6.<input type="text" name="subject"></td>
+														<td><input type="text" class="money6" name="money"></td>
+														<td><input type="text" name="reason"></td>
+													</tr>
+													</table>
+												</div>	
+											</div>	
+										</div>
+			    					</div>
+							    	<div class="content_c1">
+								    	<div class="tab_bd_top clear">
+											<div class="tab_bd_con_list btn_span">
+												<button type="button" class="submitFrom" onclick="submitClick()">提交</button>
+												<button  type="button" class="saveFrom" onclick="saveClick()">保存</button>
+											</div>
+								    	</div>
+							    	</div>
+							    </div>	
+		    				</form>
+		    			</div>	
+		    		</div>
+		    	</div>
+		    </div>
+		</div>
+		<script src="../public/js/mui.js"></script>
+		<script type="text/javascript" src="../public/js/zepto.min.js" ></script>
+		<script type="text/javascript" src="../public/js/app.js" ></script>
+		<script type="text/javascript" src="../public/js/notes.js" ></script>
+		<script type="text/javascript" src="../public/js/jquery-1.12.3.js" ></script>
+	    <script>
+	    mui.init()
+		//底部跳转事件
+		mui('#footer').on('tap', 'a', function() {
+			var id = this.getAttribute("data-wid");
+			if(!id) {
+				id = this.getAttribute('href');
+			}
+			var href = this.getAttribute('href');
+
+			//非plus环境，直接走href跳转
+			if(!mui.os.plus) {
+				location.href = href;
+				return;
+			}
+			mui.openWindow({
+				id: href,
+				url: href,
+				styles: {
+					popGesture: "none"
+				},
+				show: {
+					aniShow: 'none'
+				},
+				waiting: {
+					autoShow: false
+				}
+			});
+		});
+	   /**
+	    * 解决安卓软件键盘弹起挤压导航栏的问题
+	    */
+	   var height = document.documentElement.clientHeight || document.body.clientHeight;
+		window.onresize = function() {
+		    var heightView = document.documentElement.clientHeight || document.body.clientHeight;
+		    if(heightView < height) {
+		        plus.webview.currentWebview().setStyle({
+		            height: height
+		        });
+		        //修改父页面高度的时候，也要修改子页面的高度  因为子页面距离父页面底部始终是51px  所以这里只需要用父页面的高度减去51px,就是子页面的高度
+		        //plus.webview.getWebviewById('HTML/a.html').setStyle({height: (height*1-51)});
+		    }
+		}
+		
+	   	var tId=localStorage.getItem("teacherId");
+		//发送
+		function submitClick(){
+			if($(".notNull").val()==null||$(".notNull").val()==''){
+				mui.toast("请确认信息已填写完整");
+			}else{
+				$.ajax({
+					type:"post",
+					url:getRootPath+"/project/addProject?status=1&tId="+tId,
+					data:$('#objectForm').serialize(),
+					async:true,
+					success:function(result){
+						if(result.success){
+							mui.toast("提交成功，请耐心等待审批");
+							jQuery(':input','#objectForm').val('');
+							
+					       /*.not(':bu tton,:submit,:reset,:hidden')   //将myform表单中input元素type为button、submit、reset、hidden排除
+					         //将input元素的value设为空值
+					       .removeAttr('checked')*/
+						}else{
+							mui.toast(result.msg);
+						}
+					}
+				});
+			}	
+		}
+		//保存至草稿箱
+		function saveClick(){
+			$.ajax({
+				type:"post",
+				url:getRootPath+"/project/addProject?status=0&tId="+tId,
+				data:$('#objectForm').serialize(),
+				async:true,
+				success:function(result){
+					if(result.success){
+						mui.toast("保存成功");
+						jQuery(':input','#objectForm').val('');
+					}else{
+						mui.toast(result.msg);
+					}
+				}
+			});
+		}
+	    </script>
+	</body>
+</html>

@@ -1,0 +1,41 @@
+.collection_con {
+  position: absolute;
+  width: 100%;
+  top: 8.88889rem; }
+  .collection_con .collection_con_top {
+    width: 12rem;
+    margin: auto; }
+    .collection_con .collection_con_top .collection_con_list {
+      float: left;
+      width: 5.77778rem;
+      height: 5.77778rem;
+      border-radius: 0.44444rem; }
+      .collection_con .collection_con_top .collection_con_list .collection_list_img {
+        width: 2.48889rem;
+        height: 2.48889rem; }
+        .collection_con .collection_con_top .collection_con_list .collection_list_img img {
+          display: inline-block;
+          width: 100%;
+          margin-left: 1.64444rem;
+          margin-top: 0.97778rem; }
+      .collection_con .collection_con_top .collection_con_list .collection_list_text {
+        text-align: center;
+        color: white;
+        font-size: 0.62222rem;
+        margin-top: 1.33333rem; }
+    .collection_con .collection_con_top .Anli {
+      background: #768564; }
+    .collection_con .collection_con_top .Biji {
+      background: #8e7d5b;
+      margin-left: 0.44444rem; }
+      .collection_con .collection_con_top .Biji img {
+        width: 90%; }
+    .collection_con .collection_con_top .Tiezi {
+      background: #6a7acc;
+      margin-top: 0.44444rem; }
+    .collection_con .collection_con_top .news {
+      background: #5accbe;
+      margin-left: 0.44444rem;
+      margin-top: 0.44444rem; }
+
+/*# sourceMappingURL=collection.css.map */

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="101442689" data-redirecturi="http://192.168.1.189:8020/qingnang/qingnang/mpractice/mpractice/views/qc_back.html" charset="utf-8"></script>	
+	</head>
+	<body>
+		<script type="text/javascript" src="../public/js/mui.js" ></script>
+		<script type="text/javascript" src="../public/js/zepto.min.js"></script>
+		<script type="text/javascript" src="../public/js/app.js" ></script>
+		<script type="text/javascript">
+			
+			if(QC.Login.check()){//如果已登录
+			QC.Login.getMe(function(openId, accessToken){
+			/*alert(["当前登录用户的", "openId为："+openId, "accessToken为："+accessToken].join("\n"));*/
+             mui.get('http://192.168.1.130:8082/threeLogin/beforLogin',{
+		openId:openId
+	},function(data){
+		//服务器返回响应，根据响应结果，分析是否登录成功；
+	      if(data==200){
+	      	
+	      	window.location.href="index.html"
+	      }else{
+	      		window.location.href="register.html"
+	      }
+	},'json'
+);
+			});
+	//这里可以调用自己的保存接口
+	//...
+}
+	
+</script>
+
+
+<h3>正在登录，请稍后。。。。。</h3>
+	</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>设置</title>
+		<link rel="stylesheet" href="../public/css/mui.css" />
+		<script>
+		 	var html=document.documentElement;
+		 	var w = window.outerWidth || screen.width; if (w > 720){w='720'};
+		 	var fontSize = w/16 + 'px';html.style.fontSize =fontSize;
+		 </script>
+		 <link rel="stylesheet" href="../public/css/myindex.css"/>
+		 <link rel="stylesheet" href="../public/css/myapp.css" />
+		 <style>
+		 	#register_button {
+  width: 14.66667rem;
+  line-height: 1.77778rem;
+  color: white;
+  font-size: 0.8rem;
+  background: #D3A100;
+  margin: auto;
+  border-radius: 0.44444rem;
+  margin-left: 0.66667rem;
+  margin-top: 1rem; }
+  button{
+  	border: none;
+  	outline: none;
+  	background:none;
+  }
+		 </style>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav" id="header">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">设置</h1>
+		</header>
+		<div class="mui-content">
+			<div class="mui-bottom-view">
+							<div class="mui-bottom-view-litem clear" id="information">
+								<div class="mui_litem_left">
+									<img src="../public/image/myimg.png">
+								</div>
+								<div class="mui_litem_left_text">
+									个人信息
+								</div>
+								<div class="mui_litem_right">
+									<img src="../public/image/fh.png">
+								</div>
+							</div>
+							<div class="mui-bottom-view-litem clear" id="newphone">
+								<div class="mui_litem_left">
+									<img src="../public/image/shouji.png">
+								</div>
+								<div class="mui_litem_left_text">
+									换绑手机
+								</div>
+								<div class="mui_litem_right">
+									<img src="../public/image/fh.png">
+								</div>
+							</div>
+							<div class="mui-bottom-view-litem clear" id="Cpassword">
+								<div class="mui_litem_left">
+									<img src="../public/image/mima.png">
+								</div>
+								<div class="mui_litem_left_text">
+									修改密码	
+								</div>
+								<div class="mui_litem_right">
+									<img src="../public/image/fh.png">
+								</div>
+							</div>	
+			       </div>
+			        <button value="退出登录" id="register_button" onclick="exit()">退出登录</button>
+		</div>
+		<script type="text/javascript" src="../public/js/mui.js" ></script>
+	    <script type="text/javascript" src="../public/js/app.js" ></script>
+	    <script type="text/javascript" src="../public/js/zepto.min.js" ></script>
+	    <script>
+	    mui.init({
+			swipeBack: true //启用右滑关闭功能
+		});
+			function jump (id) {
+			mui.openWindow({
+				id: id,
+				url: id+'.html'			
+			});
+		}
+		var information=$('#information')[0]
+		var newphone=$('#newphone')[0]
+		var Cpassword=$('#Cpassword')[0]
+		 information.addEventListener("tap",function(){
+						jump('information')
+		  })
+		newphone.addEventListener("tap",function(){
+						jump('my_phone')
+		  })
+		Cpassword.addEventListener("tap",function(){
+						jump('password')
+		  })
+  
+  	//退出登录
+  	function exit(){
+  		var id=localStorage.getItem("teacherId");
+  		$.ajax({
+  			type:"post",
+  			url:getRootPath+"/teacher/exit",
+  			data:{
+  				"id":id
+  			},
+  			success:function(result){
+  				if(result.success){
+  					localStorage.clear();
+  					jump("login");
+  				}else{
+  					mui.toast(result.msg);
+  				}
+  			}
+  		});
+  	}
+	    </script>
+	</body>
+</html>

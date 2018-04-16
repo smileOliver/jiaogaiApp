@@ -1,0 +1,123 @@
+@charset "UTF-8";
+$ppr:720/16/1rem;
+.myindex_top{
+    width: 100%;
+    background: #e9b800;
+    padding-top: 120/$ppr;
+    padding-bottom: 40/$ppr;
+   .myindex_phones{
+       width: 120/$ppr;
+       height: 120/$ppr;
+       margin: auto;
+       img{
+           width: 100%;
+           height: 100%;
+            border-radius: 50%; 
+            
+       }
+   } 
+   .my-index_text{
+       text-align: center;
+       color: white;
+       font-size: 28/$ppr;
+       margin-top: 20/$ppr;
+   }
+}
+.myindex_bt{
+    width: 100%;
+    margin-top: 20/$ppr;
+    background: white;
+    padding-top: 20/$ppr;
+    padding-bottom: 20/$ppr;
+    .myindex_bt_litem{
+        width: 33.3%;
+        float: left;
+        .myindex_bt_litem_img{
+            width: 44/$ppr;
+            height: 44/$ppr;
+            margin: auto;
+            img{
+                width: 100%;
+        
+            }
+        }
+        .myindex_bt_litem_text{
+            font-size: 32/$ppr;
+            text-align: center;
+            margin-top: 10/$ppr;
+        }
+    }
+}
+.mui-bottom-view{
+    width: 100%;
+    background: white;
+    margin-top: 20/$ppr;
+    .mui-bottom-view-litem{
+        width: 95%;
+        margin-left: 5%;
+        border-bottom: 1px solid #AAAAAA;
+        height: 90/$ppr;
+        line-height:90/$ppr;
+        .mui_litem_left{
+            float: left;
+            img{
+                display: inline-block;
+                width: 44/$ppr;
+                height: 44/$ppr;
+                margin-top: 20/$ppr;
+            }
+        }
+        .mui_litem_left_text{
+            float: left;
+            margin-left: 20/$ppr;
+        }
+        .mui_litem_right{
+            float: right;
+            margin-right: 30/$ppr;
+            img{
+               display: inline-block;
+               width:20/$ppr;
+               height:32/$ppr;
+               margin-top: 20/$ppr;
+            }
+        }
+    }
+}
+.index_icon{
+    width:48/$ppr;
+    height:48/$ppr;
+    background:url(../image/shouyeb.png) no-repeat;
+    background-size:100%;
+}
+.index_icon.active{
+    background: url(../image/shouye.png) no-repeat;
+}
+.notes_icon{
+    width:48/$ppr;
+    height:48/$ppr;
+    background:url(../image/bijia.png) no-repeat;
+    background-size:100%;
+}
+.notes_icon.active{
+    background: url(../image/bijic.png) no-repeat;
+}
+.community_icon{
+     width:48/$ppr;
+    height:48/$ppr;
+    background:url(../image/shequ.png) no-repeat;
+    background-size:100%;
+}
+.community_icon.active{
+
+    background:url(../image/shequc.png) no-repeat;
+  
+}
+.my_icon{
+    width: 48/$ppr;
+    height: 48/$ppr;
+    background: url(../image/myicon.png);
+    background-size: 100%;
+}
+.my_icon.active{
+    background: url(../image/myb.png);
+}

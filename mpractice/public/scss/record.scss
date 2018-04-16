@@ -1,0 +1,29 @@
+@charset "UTF-8";
+$ppr:720/16/1rem;
+.record_con{
+    width: 100%;
+    .record_con_top{
+        width: 90%;
+        margin: auto;
+        margin-top: 20/$ppr;
+        font-size: 28/$ppr;
+        padding-bottom:10/$ppr;
+    }
+    .record_bon{
+        width: 90%;
+        background: white;        
+        margin:auto;
+        .record_bon_list{
+            width: 100%;
+            border-bottom: 1px solid #AAAAAA;
+            .record_bon_list_top{
+                font-size: 24/$ppr;
+                margin-left: 30/$ppr;
+            }
+            .record_bon_list_btn{
+                font-size: 20/$ppr;
+                margin-left: 30/$ppr;
+            }
+        }
+    }
+}

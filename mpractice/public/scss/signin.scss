@@ -1,0 +1,104 @@
+@charset "UTF-8";
+$ppr:720/16/1rem;
+.signin_con{
+    width: 100%;
+    .signin_con_top{
+        width: 100%;
+        height: 620/$ppr;
+        background: #e9b800;
+        .signin_left{
+            float: left;
+            margin-left:30/$ppr;
+            .sigin_text{
+                font-size: 28/$ppr;
+                color: white;
+                margin-top: 40/$ppr;
+            }
+            .sigin_sing{
+                font-size: 24/$ppr;
+                color: white;
+            }
+        }
+        .signin_right{
+            float: right;
+            margin-right: 30/$ppr;
+            padding:10/$ppr 15/$ppr;
+            background: white;
+            border-radius: 10/$ppr;
+            color: #8d2c4a;
+            font-size: 32/$ppr;
+            margin-top: 40/$ppr;
+        }
+        .center_signin{                  
+            width: 350/$ppr;
+            height: 350/$ppr;
+            border-radius: 50%;
+            border: 1px solid white;
+            box-sizing: border-box;        
+            margin:auto;
+            margin-top: 75/$ppr;
+            position: relative;
+            .center_sigin_con{
+                position: absolute;
+                width: 310/$ppr;
+                height: 310/$ppr;
+                border-radius: 50%;
+                background: white;
+                top:20/$ppr;
+                left:20/$ppr;
+                p{
+                    text-align: center;
+                    color:#8e7228;
+                    
+                }
+                .jifen{
+                    font-size: 70/$ppr;
+                    margin-top: 130/$ppr;
+                }
+                .jiesha{
+                    font-size: 28/$ppr;
+                    margin-top: 40/$ppr;
+                }
+            }
+        }
+    }
+    .signin_icon_con{
+        width:660/$ppr;
+        height: 120/$ppr;
+        background: white;
+        border-radius:20/$ppr;
+        margin-left: 30/$ppr;
+        margin-top: -50/$ppr;
+        .signin_icon_list{
+            float: left;
+            width: 33.3%;
+            text-align: center;
+            margin-top: 20/$ppr;
+            margin-bottom: 20/$ppr;
+            .signin_icon_img{
+                width:48/$ppr;
+                height: 48/$ppr;
+                margin: auto;
+                img{
+                    width: 100%;
+                }
+            }
+            .signin_icon_text{
+                color: #BB9437;
+                font-size: 28/$ppr;
+                margin-top: 10/$ppr;
+            }
+        }
+    }
+    
+}
+.table_left{
+    float: left;
+    font-size: 24/$ppr;
+}
+.table_right{
+    float: right;
+    font-size:32/$ppr;
+    color:#8f7126;
+    margin-top: 10/$ppr;
+}

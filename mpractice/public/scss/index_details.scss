@@ -1,0 +1,40 @@
+$ppr:720/16/1rem;
+.index_details_con{
+    width: 100%;
+   .index_details_top{
+       width: 100%;
+   }
+   .index_details_center{
+       width: 100%;
+       margin-top: 10/$ppr;
+       .index_details_text{
+           width: 100%;
+           background: white;
+           padding-top: 10/$ppr;
+           padding-bottom: 10/$ppr;
+           .index_details_bt{
+               width: 88/$ppr;
+               background: #E9B900;
+               padding: 5/$ppr 10/$ppr;
+               text-align: center;
+               border-radius: 10/$ppr;
+               color: white;
+               margin: auto;
+              
+           }
+       }
+       .index_details_bttom{
+           width: 100%;
+           background: white;
+           padding-top: 20/$ppr;
+           padding-bottom: 20/$ppr;
+           margin-top: 2/$ppr;
+           p{
+               width: 90%;
+               margin: auto;
+               font-size: 28/$ppr;
+               color: #222222;
+           }
+       }
+   }
+}

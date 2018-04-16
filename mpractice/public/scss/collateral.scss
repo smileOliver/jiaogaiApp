@@ -1,0 +1,43 @@
+@charset "UTF-8";
+$ppr:720/16/1rem;
+.collarteral_con{
+    width: 100%;
+    margin-top: 20/$ppr;
+    .collarteral_top{
+        width: 100%;
+        background: white;
+        padding-top:20/$ppr;
+        .collarteral_top_text{
+            font-size: 36/$ppr;
+            color: #222222;
+            text-align: center;
+        }
+        .collarteral_btn_text{
+            font-size: 24/$ppr;
+            color: #AAAAAA;
+            text-align: center;
+        }
+    }
+    .collarteral_con_center{
+        padding-top: 20/$ppr;
+        width: 100%;
+        background: white;
+        margin-top:20/$ppr;
+        padding-bottom: 20/$ppr;
+        .collarteral_con_list{
+            width: 100%;
+         
+            .collarteral_con_list_left{
+                width: 213/$ppr;
+               height: 48/$ppr;
+               background:#FEF8D3;
+               border-radius:10/$ppr;
+               float: left;
+               margin-left: 20/$ppr;
+               line-height: 48/$ppr;
+               text-align: center;
+               margin-top: 15/$ppr;
+            }
+        }
+    }
+}

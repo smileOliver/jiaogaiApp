@@ -1,0 +1,158 @@
+/*第一个部分*/
+.tab_con {
+  width: 100%; }
+  .tab_con .tab_bd {
+    width: 100%;
+    margin-top: 0.44444rem; }
+    .tab_con .tab_bd .tab_bd_con {
+      width: 100%;
+      display: none; }
+      .tab_con .tab_bd .tab_bd_con:first-child {
+        display: block; }
+.tab_bd_con {
+  width: 100%; }
+  .tab_bd_con .tab_bd_top {
+    width: 100%;
+    background: white;
+    padding-top: 0.44444rem;
+    padding-bottom: 0.8rem; }
+
+  .tab_bd_con .tab_bd_top_text {
+    color: #BF9F14;
+    font-size: 0.71111rem;
+    text-align: center; }     
+.tab_bd_con1{
+	width: 100%;
+  background: white;
+  margin-top:0.25rem;
+  border-bottom: 1px solid gainsboro;
+}
+  .tab_con .tab_bd_con_list{
+  	width: 100%;
+  	padding-left: 0.8rem;
+    box-sizing: border-box;
+    padding-top: 0.25rem;
+  }
+  .tab_con .tab_bd_con_list input{
+  	display: inline-block;
+    width: 8.33333rem;
+    font-size: 0.62222rem;
+    border: none;
+    color: #9FA0A0; 
+    padding:0.15rem 0.35rem;
+  }
+  .tab_bd_con1 .tab_bd_con_text{
+  	font-size: 0.71111rem;
+    color: #222222;
+    padding-bottom: 0.58rem;
+    padding-top: 0.52rem;
+    display: inline-block;
+  }
+ .tab_bd_select{
+ 		margin-left: 3.8rem;
+	  margin-top: -1.52rem;
+ }
+ #departmentId{
+	font-size: 0.65rem;
+	
+}
+  /*以上是第一部分*/
+ /*第二部分：简表*/
+ .tab_bd_con1 .tab_bd_top_text1{
+	 	float: left;
+		color: #BF9F14;
+    font-size: 0.71111rem;
+    margin-left: 0.8rem;
+  }
+  .content_c1{
+  	width: 100%;
+  	margin:auto;
+  }
+  .content_c1 .content_title{
+  	color:brown;
+  	padding-left: 0.8rem;
+  	padding-bottom: 0.12rem;
+  	font-size: 0.8rem; 
+  }
+    .con_content .content_text_t1{
+  	width: 100%;
+  	margin: auto;
+  }
+   .content_c1 .content_text_t1 .tab1_bd_left {
+        width: 50%;
+        float: left; 
+        padding-left: 0.8rem;
+        }
+        .content_c1 .content_text_t1 .tab1_bd_left .tab1_bd_text {
+          font-size:  0.71111rem;color:#222222; }
+        .content_c1 .content_text_t1 .tab1_bd_left input[type=text] {
+          display: inline-block;
+          width: 50%;
+          line-height: 0.88889rem !important;
+          height: 0.88889rem !important;
+          font-size: 0.44444rem;
+          margin-top: 0.44444rem;
+          margin-bottom: 0rem !important;
+          border: none;
+          outline: none; }
+
+  .content_c1 .content_text_t1 .tab1_bd_right {
+        width: 50%;
+        float: left;
+        margin-top: 0.22rem;
+        }
+        .content_c1 .content_text_t1 .tab1_bd_right .tab1_bd_right {
+          font-size:0.71111rem; color:#222222;}
+        .content_c1 .content_text_t1 .tab1_bd_right input[type=text] {
+          border: none;
+          outline: none;
+          width: 50%;
+          line-height: 0.88889rem !important;
+          height: 0.88889rem !important;
+          font-size: 0.44444rem;
+          margin-top: 0.22222rem;
+          display: inline-block;
+          margin-bottom: 0rem !important; }
+  /*表格*/
+	.content_c1 .con_content_table{
+	 	width: 95%;
+	 	margin: 0;
+	 	padding-bottom: 0.333rem;
+	 }
+  .content_c1 .con_content_table input{
+  	width: 2.8rem;
+  	padding:0;
+  }
+  .content_c1 .con_content_table2{
+	 	width: 95%;
+	 	margin: 0;
+	 	padding-bottom: 0.333rem;
+	 }
+  .content_c1 .con_content_table2 input{
+  	width: 2.23rem;
+  	padding:0;
+  }
+   .content_c1 .con_content_table3{
+  	width: 95%;
+	 	margin: 0;
+	 	padding-bottom: 0.333rem;
+	 	padding-top: 0.8rem;
+  }
+   .content_c1 .con_content_table3 input{
+  	width: 4.25rem;
+  	padding:0;
+  }
+  /*第二部分结束*/
+ .btn_span{
+ 	text-align: center;
+ }
+  .submitFrom,.saveFrom{
+  	background: #E9B800;
+  	font-size: 0.8rem;
+  	padding: 0.22rem 1.25rem;
+  	border: 1px sold transparent;
+  	border-radius: 5px;
+  	margin-right: 0.8rem;
+  }
+
+

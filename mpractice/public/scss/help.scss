@@ -1,0 +1,53 @@
+$ppr:720/16/1rem;
+.mui_table_list{
+    width: 90%;
+    margin: auto;
+    border-bottom: 1px solid #AAAAAA;
+    box-sizing: border-box;
+    padding-top: 20/$ppr;
+    padding-bottom: 20/$ppr;
+}
+.mui_list_text{
+    float: left;
+    font-size: 28/$ppr;
+    
+}
+.mui_list_right{
+    float: right;
+    img{
+        width:18/$ppr;
+        height:32/$ppr;
+        display: inline-block;
+        margin-top: 5/$ppr;
+    }
+}
+.mui_table_bd_con{
+    width: 90%;
+    margin: auto;
+    position: relative;
+  
+   #file_head{
+       margin-top:220/$ppr;
+       margin-left: 30/$ppr;
+   }
+   #localImag{
+       position: absolute;
+       top:20/$ppr;
+       left:30/$ppr;
+   }
+ 
+}
+  .mui_bttom_send{
+       width: 90%;
+       margin: auto;
+       line-height:60/$ppr ;
+       .mui_bttom_send button{
+           width: 90%;
+           height: 60/$ppr;
+           line-height: 60/$ppr;
+           color: white;
+           outline: none;
+           border: none;
+           background: #D3A100;
+       }
+   }

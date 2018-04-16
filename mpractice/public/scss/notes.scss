@@ -1,0 +1,321 @@
+@charset "UTF-8";
+$ppr:720/16/1rem;
+.tab_con{
+    width: 100%;
+    .tab_hd{
+        width: 100%;
+        background: white;      
+        .nav{
+            li{
+                text-align: center;
+                font-size: 32/$ppr;
+     
+            
+            li.active{
+                color: #D3A100;
+                
+            }
+        }
+    }
+    }
+    .tab_bd{
+        width: 100%;
+        margin-top: 20/$ppr;
+        
+        .tab_bd_con{
+            width: 100%;
+            display: none;
+            &:first-child{
+            display: block;
+            }
+        }
+      
+    }
+    
+} 
+
+    .tab1_bd{
+       
+        width: 100%;       
+        .tab1_bd_top{
+            margin-top: 2/$ppr;
+            width: 100%; 
+             background: white; 
+             padding-bottom: 20/$ppr;     
+            .tab1_bd_top_list{
+                width:90%;
+                margin: auto;
+                .tab1_bd_left{
+                    width: 50%;
+                    float: left;                
+                    .tab1_bd_text{
+                        font-size: 28/$ppr;
+                       
+                        
+                    }
+                    input[type=text]{
+                      display: inline-block;
+                      width:50%;
+                      line-height:40/$ppr !important;
+                      height: 40/$ppr !important;
+                      font-size: 20/$ppr;
+                      margin-top: 20/$ppr;
+                      margin-bottom:0/$ppr !important;
+                       border: none;
+                      outline: none; 
+                    }
+                }
+                .tab1_bd_right{
+                    width: 50%;
+                    float: left;
+                    margin-top:10/$ppr;
+                   
+                    .tab1_bd_right{
+                        font-size: 28/$ppr;
+                        
+                    }
+                    input[type=text]{
+                      border: none;
+                      outline: none;  
+                      width:50%;
+                       line-height:40/$ppr !important;
+                        height: 40/$ppr !important;
+                        font-size: 20/$ppr;
+                        margin-top: 10/$ppr;
+                         display: inline-block;
+                         margin-bottom:0/$ppr !important;
+                       
+                    }
+                }
+            }
+        }
+    }
+
+  .tab_bd_con{
+        width: 100%;
+    
+        .tab_bd_top{
+            width: 100%;
+                background: white;
+        padding-top: 20/$ppr;
+        padding-bottom: 20/$ppr;
+            .tab_bd_top_img{               
+                 width: 40/$ppr;
+                 height:40/$ppr;
+                float: left;
+                margin-left: 30/$ppr;
+                img{
+                    display: inline-block;
+                    width:40/$ppr;
+                    height:40/$ppr;
+                }
+            }
+        }
+        .tab_bd_top_text{
+            float: left;
+            color: #BF9F14;
+            font-size: 32/$ppr;
+            margin-left: 20/$ppr;
+        }
+    }
+    .tab1_bd_center{
+        margin-top: 2/$ppr;
+        width: 100%;
+        background: white;
+        padding-top: 20/$ppr;
+        padding-bottom: 20/$ppr;
+    }
+    .tab1_bd_linchuang{
+        width: 100%;
+        background: white;
+        margin-top:2/$ppr;
+        padding-top:20/$ppr;
+        padding-bottom: 20/$ppr;
+        .tab1_bd_lin_top{
+            width: 100%;
+            .tab1_bd_lin_img{
+           
+                float: left;
+                margin-left: 30/$ppr;
+                img{
+                    display: inline-block;
+                    width: 34/$ppr;
+                    height: 34/$ppr;
+                }
+            }
+            .tab1_bd_lin_text{
+                float: left;
+                font-size: 32/$ppr;
+                color:#C09E14;
+                margin-left: 20/$ppr;
+            }
+            .tab1_bd_lin_right{
+                float: right;
+                margin-right: 30/$ppr;
+            }
+        }
+    }
+    .tab1_bd_clinical{
+        width: 100%;
+        display: none;
+        .tab1_clinical{
+            width: 90%;
+            margin: auto;
+            margin-top: 20/$ppr;
+            font-size: 28/$ppr;
+             position: relative;
+             .icon_notes{
+                 width: 36/$ppr;
+                 height: 36/$ppr;
+                 position: absolute;
+                 right:10/$ppr;
+                 top:15/$ppr;
+                 z-index: 5;
+                 background: url(../image/add_notes.png) no-repeat center;
+                 background-size: 100%;
+             }
+            input[type=text]{
+              width: 78%;
+              height: 60/$ppr;
+              line-height: 60/$ppr;
+              font-size: 24/$ppr;
+              color:#AAAAAA;
+            margin-bottom: 0/$ppr;
+            }
+        }
+        .clinical_btton{
+            width: 100/$ppr;
+            background: #D3A100;           
+            text-align: center;
+             border-radius:10/$ppr;
+             float: right;
+             margin-right: 30/$ppr;
+             margin-top: 20/$ppr;
+            button{
+               border:none;
+            outline: none;
+            background:none; 
+            font-size: 28/$ppr;
+            color: white;
+            padding: 5/$ppr;
+           
+            }
+        }
+    }
+    .medicine_con{
+        width: 100%;
+        background: white;
+        margin-top: 2/$ppr;
+        padding-top:10/$ppr;
+    }
+    .XinDe{
+        width: 100%;
+       
+      .XinDe_top{
+          width: 100%;
+          padding-top: 20/$ppr;
+          padding-bottom: 20/$ppr;
+           background:white;
+          .XinDe_top_img{
+             width: 34/$ppr;
+             height:34/$ppr;
+             float: left;
+             margin-left: 30/$ppr;
+             img{
+                 width:34/$ppr;
+                 height: 34/$ppr;
+             }
+          }
+          .XinDe_text{
+              float: left;
+           font-size:32/$ppr;
+           color: #C09E16;
+           margin-left: 20/$ppr; 
+           
+           
+          }
+      }
+      .XinDe_con{
+          width:100%;
+          background: white;
+          margin-top: 2/$ppr;
+          padding-top: 10/$ppr;
+          padding-bottom:20/$ppr;
+          .mui_XinDe_boder{
+              width: 90%;
+              margin: auto;
+              border: 1px solid #AAAAAA;
+              height: 320/$ppr;
+              padding-bottom: 20/$ppr;
+              border-radius: 20/$ppr;
+              .XinDe_img{
+                    width: 100%;
+                    height:40/$ppr;
+                  margin-left: 10/$ppr;
+               
+                  img{
+                      width: 56/$ppr;
+                      height: 56/$ppr;
+                      display: inline-block;
+                      margin-bottom:20/$ppr;
+                  }
+              }
+          }
+      } 
+      .XinDe_bttom{
+          width: 100%;
+          background: white;
+          padding-bottom: 20/$ppr;
+          .btton_fen{
+              float: right;
+              margin-right: 30/$ppr;
+              margin-top: -60/$ppr;
+              button{
+                  width: 100/$ppr;
+                  background: #D3A100;
+                  border-radius: 10/$ppr;
+                  color: white;
+                  font-size: 28/$ppr;
+                  text-align: center;
+                  padding: 5/$ppr 0;
+              }
+          }
+      }
+    }
+.index_icon{
+    width:48/$ppr;
+    height:48/$ppr;
+    background:url(../image/shouyeb.png) no-repeat;
+    background-size:100%;
+}
+.index_icon.active{
+    background: url(../image/shouye.png) no-repeat;
+}
+.notes_icon{
+    width:48/$ppr;
+    height:48/$ppr;
+    background:url(../image/bijia.png) no-repeat;
+    background-size:100%;
+}
+.notes_icon.active{
+    background: url(../image/bijic.png) no-repeat;
+}
+.community_icon{
+    width:48/$ppr;
+    height:48/$ppr;
+    background:url(../image/shequ.png) no-repeat;
+    background-size:100%;
+}
+.community_icon.active{
+
+    background:url(../image/shequc.png) no-repeat;
+  
+}
+.my_icon{
+    width: 48/$ppr;
+    height: 48/$ppr;
+    background: url(../image/myicon.png) no-repeat; 
+}
+.my_icon.active{
+    background: url(../image/myb.png) no-repeat;
+}

@@ -1,0 +1,41 @@
+.records_list_con {
+  width: 100%;
+  margin-top: 0.44444rem; }
+  .records_list_con .records_listt_top {
+    width: 100%;
+    background: white;
+    padding-top: 0.33333rem;
+    padding-bottom: 0.33333rem; }
+    .records_list_con .records_listt_top .records_listt_top_text {
+      width: 1.95556rem;
+      font-size: 0.62222rem;
+      color: white;
+      background: #E9B800;
+      border-radius: 0.11111rem;
+      text-align: center;
+      padding: 0.11111rem 0.22222rem;
+      margin: auto; }
+  .records_list_con .records_list {
+    width: 100%;
+    background: white;
+    padding-left: 0.66667rem;
+    font-size: 0.71111rem;
+    padding-top: 0.44444rem;
+    padding-bottom: 0.44444rem;
+    margin-top: 0.04444rem; }
+  .records_list_con .records_list_btm {
+    width: 100%;
+    background: white;
+    margin-top: 0.04444rem;
+    padding-bottom: 0.44444rem; }
+    .records_list_con .records_list_btm .records_list_btm_list {
+      width: 90%;
+      margin: auto;
+      margin-top: 0.22222rem;
+      font-size: 0.62222rem; }
+      .records_list_con .records_list_btm .records_list_btm_list .records_list_btm_text {
+        color: #AAAAAA; }
+      .records_list_con .records_list_btm .records_list_btm_list .records_list_btm_text1 {
+        color: #222222; }
+
+/*# sourceMappingURL=records_list.css.map */

@@ -1,0 +1,49 @@
+@charset "UTF-8";
+$ppr:720/16/1rem;
+.records_list_con{
+    width: 100%;
+    margin-top: 20/$ppr;
+    .records_listt_top{
+        width: 100%;
+        background: white;
+        padding-top: 15/$ppr;
+        padding-bottom: 15/$ppr;
+        .records_listt_top_text{
+            width: 88/$ppr;
+            font-size: 28/$ppr;
+            color: white;
+            background:#E9B800;
+            border-radius: 5/$ppr;
+            text-align: center;
+            padding: 5/$ppr 10/$ppr;
+            margin: auto;
+        }
+    }
+    .records_list{
+        width: 100%;
+        background: white;
+        padding-left: 30/$ppr;
+        font-size: 32/$ppr;
+        padding-top: 20/$ppr;
+        padding-bottom: 20/$ppr;
+        margin-top: 2/$ppr;
+    }
+    .records_list_btm{
+        width: 100%;
+        background: white;
+        margin-top: 2/$ppr;
+        padding-bottom: 20/$ppr;
+        .records_list_btm_list{
+            width: 90%;
+            margin: auto;
+            margin-top: 10/$ppr;
+            font-size: 28/$ppr;
+            .records_list_btm_text{
+                color: #AAAAAA;
+            }
+            .records_list_btm_text1{
+                color: #222222;
+            }
+        }
+    }
+}

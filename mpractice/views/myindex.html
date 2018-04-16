@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>我的</title>
+		<link rel="stylesheet" href="../public/css/mui.css" />
+		<script>
+		 	var html=document.documentElement;
+		 	var w = window.outerWidth || screen.width; if (w > 720){w='720'};
+		 	var fontSize = w/16 + 'px';html.style.fontSize =fontSize;
+		 </script>
+		 <link rel="stylesheet" href="../public/css/myindex.css"/>
+		 <link rel="stylesheet" href="../public/css/myapp.css" />
+		 <link rel="stylesheet" href="../public/css/iconfont.css" />
+		 <style>
+		 	 .mui-bar{
+		 	 	box-shadow: none;
+		 	 }
+		 	 .mui-bar-nav{
+		 	 	box-shadow: none;
+		 	 }
+		  .mui-content{
+		 	 padding-top:48px;
+		 	 }
+		 	#register_button {
+			  width: 14.66667rem;
+			  line-height: 1.77778rem;
+			  color: white;
+			  font-size: 0.8rem;
+			  background: #169eeb;
+			  margin: auto;
+			  border-radius: 0.44444rem;
+			  margin-left: 0.66667rem;
+			  margin-top: 1rem; }
+			  button{
+			  	border: none;
+			  	outline: none;
+			  	background:none;
+			  }
+			.footer_exit{
+				margin-top: -20px;
+				margin-bottom: 30px;
+			}  
+		 </style>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav" id="header">
+			<a class="mui-action-back"></a>
+			<h1 class="mui-title">我的</h1>
+		</header>
+		<nav id="footer" class="mui-bar mui-bar-tab mui_bttom">
+			<a class="mui-tab-item" href="index.html">
+				<span class="mui-icon icon iconfont icon-homepage "></span>
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<a class="mui-tab-item" href="notes.html">
+				<span class="mui-icon icon iconfont icon-activity"></span>
+				<span class="mui-tab-label">申报</span>
+			</a>
+			<a class="mui-tab-item" href="project.html">
+				<span class="mui-icon icon iconfont icon-group"></span>
+				<span class="mui-tab-label">项目</span>
+			</a>
+			<a class="mui-tab-item  mui-active" href="myindex.html">
+				<span class="mui-icon icon iconfont icon-people "></span>
+				<span class="mui-tab-label">我的</span>
+			</a>			
+		</nav>
+		<div class="mui-content">
+			<form>
+			<div class="myindex_top">
+				<div class="myindex_phones" id="myHead">
+				     
+				</div>
+			</div>
+			</form>
+			<div class="myindex_bt clear">
+				<div class="myindex_bt_litem" id="xiaoxi">
+					<div class="myindex_bt_litem_img">
+						<img src="../public/image/pl.png">
+					</div>
+					<div class="myindex_bt_litem_text">我的消息</div>				
+				</div>
+				<div class="myindex_bt_litem" id="shenpi">
+					<!--<div class="myindex_bt_litem_img">
+						<img src="../public/image/my_icon1.png"style="width:18px;">
+					</div>
+					<div class="myindex_bt_litem_text">我的审批</div>-->				
+				</div>
+					<!--<div class="myindex_bt_litem" id="fankui">
+					<div class="myindex_bt_litem_img">
+						<img src="../public/image/my_icon2.png">
+					</div>
+					<div class="myindex_bt_litem_text" id="code">我的反馈</div>				
+				</div>-->
+			</div>
+			
+				<div class="mui-bottom-view">
+							<div class="mui-bottom-view-litem clear" id="information">
+								<div class="mui_litem_left">
+									<img src="../public/image/myimg.png">
+								</div>
+								<div class="mui_litem_left_text">
+									个人信息
+								</div>
+								<div class="mui_litem_right">
+									<img src="../public/image/my_icon4.png">
+								</div>
+							</div>
+							<div class="mui-bottom-view-litem clear" id="newphone">
+								<div class="mui_litem_left">
+									<img src="../public/image/shouji.png">
+								</div>
+								<div class="mui_litem_left_text">
+									换绑手机
+								</div>
+								<div class="mui_litem_right">
+									<img src="../public/image/my_icon4.png">
+								</div>
+							</div>
+							<div class="mui-bottom-view-litem clear" id="Cpassword">
+								<div class="mui_litem_left">
+									<img src="../public/image/mima.png">
+								</div>
+								<div class="mui_litem_left_text">
+									修改密码	
+								</div>
+								<div class="mui_litem_right">
+									<img src="../public/image/my_icon4.png">
+								</div>
+							</div>	
+							<div class="mui-bottom-view-litem clear" id="help" style="border-bottom: 1px solid transparent;">
+								<div class="mui_litem_left">
+									<img src="../public/image/bz.png">
+								</div>
+								<div class="mui_litem_left_text">
+									意见反馈
+								</div>
+								<div class="mui_litem_right">
+									<img src="../public/image/my_icon4.png">
+								</div>
+							</div>
+			       </div>
+			       <div class="footer_exit">
+			       	 <button value="退出登录" id="register_button" onclick="exit()">退出登录</button>
+			       </div>
+			      
+		 <script src="../public/js/mui.js"></script>
+		<script type="text/javascript" src="../public/js/jquery-1.12.3.js" ></script>
+		<script type="text/javascript" src="../public/js/app.js" ></script>
+		<script type="text/javascript" src="../public/js/myindex.js"></script>
+	</body>
+</html>

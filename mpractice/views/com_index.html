@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+		<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta http-equiv="Access-Control-Allow-Origin" content="">
+        <meta http-equiv="content-security-policy">
+		<title>社区</title>
+		<link rel="stylesheet" href="../public/css/mui.css" />
+		<link rel="stylesheet" href="../public/css/swiper.css" />
+		<script>
+		 	var html=document.documentElement;
+		 	var w = window.outerWidth || screen.width; if (w > 720){w='720'};
+		 	var fontSize = w/16 + 'px';html.style.fontSize =fontSize;
+		 </script>
+		 <link rel="stylesheet" href="../public/css/com_index.css"/>
+		 <link rel="stylesheet" href="../public/css/myapp.css" />
+		<style>
+		 	.mui-control-item img{
+		 		display: inline-block;
+		 		width: 20px;
+		 		height: 20px;
+		 	}
+		</style>	
+	</head>
+	<body>
+	<div class="tab_all">
+		<header class="mui-bar mui-bar-nav" id="header">
+	         <a class="mui-action-back"></a>
+	        
+			<div class="nav_content clear">
+			<div class="nav_left">
+				<img src="../public/image/fb.png">
+			</div>
+			<div class="all_tab_hd">
+			<ul class="nav_content1 clear">
+				<li class="nav_content_litem active" id="notes">笔记</li>
+				<li class="nav_content_litem">帖子</li>
+			</ul>
+			</div>		
+			</div>
+		</header>
+		<div id="pullrefresh" class="mui-scroll-wrapper">
+	    <div class="mui-scroll">
+		<div class="tab_bd">
+		
+			 <ol id="notes_views">
+				<div class="tab1">
+				  <div class="tab1_hd  xmli1">
+				  	<div class="swiper-container ">
+					    <ul class="subnav swiper-wrapper clear">					
+						</ul>
+					</div>
+				 </div>
+				  <div class="tab1_bd" id="tab_content">
+				  	
+				  </div>
+				
+				 </div>
+			</ol>
+	
+			
+			<ol id="Tie">
+			        <div class="tab1">
+					<div class="tab1_hd"  id="xmli2">
+						<div class="swiper-container">
+						<ul class="subnav2 swiper-wrapper  clear">
+							
+						</ul>
+						</div>
+					</div>
+					<div class="tab1_bd" id="tab_Tie">
+					
+                   	</div>
+				</div>
+				
+			</ol>
+			<input type="hidden"  id="counter" value="1"/>	
+	
+		</div>
+		</div>
+		</div>
+	</div>
+       <nav id="footer" class="mui-bar mui-bar-tab mui_bttom">
+			<a class="mui-tab-item" href="index.html">
+				<span class="mui-icon index_icon"></span>
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<a class="mui-tab-item" href="com_index.html">
+				<span class="mui-icon notes_icon"></span>
+				<span class="mui-tab-label">笔记</span>
+			</a>
+			<a class="mui-tab-item  mui-active" href="notes.html">
+				<span class="mui-icon community_icon active"></span>
+				<span class="mui-tab-label">社区</span>
+			</a>
+			<a class="mui-tab-item" href="myindex.html">
+				<span class="mui-icon my_icon "></span>
+				<span class="mui-tab-label">我的</span>
+			</a>			
+		</nav>
+	</body>
+		<script type="text/javascript" src="../public/js/jquery-1.12.3.js"></script>
+		<script src="../public/js/mui.js"></script>
+		<script type="text/javascript" src="../public/js/app.js" ></script>
+	<!--<script type="text/javascript" src="../public/js/zepto.min.js" ></script>-->
+		<script type="text/javascript" src="../public/js/com_add.js" ></script>
+		<script type="text/javascript" src="../public/js/swiper.min.js" ></script>
+		<script type="text/javascript" src="../public/js/com_notes.js" ></script>
+		<script>
+         mui.init()
+		//底部跳转事件
+		mui('#footer').on('tap', 'a', function() {
+			var id = this.getAttribute("data-wid");
+			if(!id) {
+				id = this.getAttribute('href');
+			}
+			var href = this.getAttribute('href');
+
+			//非plus环境，直接走href跳转
+			if(!mui.os.plus) {
+				location.href = href;
+				return;
+			}
+			mui.openWindow({
+				id: href,
+				url: href,
+				styles: {
+					popGesture: "none"
+				},
+				show: {
+					aniShow: 'none'
+				},
+				waiting: {
+					autoShow: false
+				}
+			});
+		});
+
+/************以上是头部************/  
+xmswiper('.xmli1'); 
+xmswiper('#xmli2'); 
+function xmswiper(ele){
+	 new Swiper(ele+' .swiper-container', {
+		slidesPerView:5.5,
+		loop:false,
+		spaceBetween:5.5
+	});
+} 
+/*var swiper = new Swiper('.xmli1', {  
+   slidesPerView:5.5,
+		loop:false,
+		spaceBetween:5.5
+});
+var swiper = new Swiper('#xmli2', {  
+   slidesPerView:5.5,
+		loop:false,
+		spaceBetween:5.5
+});*/
+</script>
+<script>
+			/*级tab*/
+			/*$('.nav_content .nav_contyient_litem').bind("click",function () {
+                $('.nav_content1 .nav_content_litem').removeClass('active');
+                $(this).addClass('active')
+				var eq = $(this).index()
+				$('.tab_bd ol').hide().eq(eq).show();
+            })*/
+         
+			/*二级tab*/
+		
+   		
+	/*nav_content_litem.addEventListener("tap",function(){
+ 	     var eq = $(this).index()
+      $(this).addClass('active').siblings().removeClass('active')
+      $('#ol_con').show().siblings().hide();
+    mui.get('http://192.168.1.173:8081/notes/findNotesByKind',{
+		 id:'1',
+		 pageNum:'2',
+		 pageSize:'2'
+	},function(data){
+		//服务器返回响应，根据响应结果，分析是否登录成功；
+	/*if(data.resCode==0){
+		alert("注册成功")
+	}else{
+		alert("注册失败")
+	}*/
+/*	},'json'
+);
+}) */
+ 
+  
+
+     
+</script>
+</html>

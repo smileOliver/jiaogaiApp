@@ -1,0 +1,64 @@
+@charset "UTF-8";
+$ppr:720/16/1rem;
+.acupoints_con{
+    width: 100%;
+    margin-top: 20/$ppr;
+    .acupoints_con_top{
+        width: 100%;
+        background: white;
+        padding-top: 20/$ppr;
+        padding-bottom: 20/$ppr;
+        .acupoints_con_icon{
+            float: left;
+            margin-left: 30/$ppr;
+            
+            img{
+                width: 40/$ppr;
+            }
+        }
+        .acupoints_con_text{
+            float: left;
+            margin-left: 20/$ppr;
+            color: #222222;
+            font-size: 32/$ppr;
+        }
+    }
+    .acupoints_con_center{
+        width: 100%;
+        .acupoints_con_center_list{
+            width: 100%;
+            .acupoints_con_left{
+                float: left;
+                width:32%;
+                background: white;
+                margin-left:1%;
+                margin-top: 1%;
+                text-align: center;
+                line-height:48/$ppr;
+                 height: 48/$ppr;   
+            }
+        }
+    }
+     .collarteral_con_center{
+        padding-top: 20/$ppr;
+        width: 100%;
+        background: white;
+        margin-top:2/$ppr;
+        padding-bottom: 20/$ppr;
+        .collarteral_con_list{
+            width: 100%;
+           
+            .collarteral_con_list_left{
+                width: 213/$ppr;
+               height: 48/$ppr;
+               background:#FEF8D3;
+               border-radius:10/$ppr;
+               float: left;
+               margin-left: 20/$ppr;
+               line-height: 48/$ppr;
+               text-align: center;
+               margin-top:10/$ppr;
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+@charset "UTF-8";
+$ppr:720/16/1rem;
+.publish_con{
+    width: 100%;
+    margin-top: 20/$ppr;
+}
+.pulish_list{
+    width: 100%;
+    background: white;
+    padding-top: 10/$ppr;
+    padding-bottom:10/$ppr;
+    margin-top: 2/$ppr;
+    .sex{
+        margin-left:5%;
+    }
+    .pulish_list_left{
+        width: 90%;
+        margin: auto;
+  
+    
+        .input_num{
+            width:120/$ppr;
+            line-height:30/$ppr;
+            height: 30/$ppr;
+        }
+    }
+    .pulish_list_left1{
+        width: 80%;
+        margin-left:11%;
+        margin-top: -45/$ppr;
+    }
+}

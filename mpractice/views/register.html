@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta http-equiv="Access-Control-Allow-Origin" content="">
+        <meta http-equiv="content-security-policy">
+		<title>注册</title>
+		<link rel="stylesheet" href="../public/css/mui.css" />
+		<script>
+		 	var html=document.documentElement;
+		 	var w = window.outerWidth || screen.width; if (w > 720){w='720'};
+		 	var fontSize = w/16 + 'px';html.style.fontSize =fontSize;
+		 </script>
+		 <link rel="stylesheet" href="../public/css/register.css" />
+		 <link rel="stylesheet" href="../public/css/myapp.css" />
+		 <style>
+		 	.mui-content{
+		 		margin-top: 2.0rem;
+		 	}
+		 </style>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		<h1 class="mui-title">注册</h1>
+		</header>
+		<div class="mui-content">
+		   <div class="register_con">
+		   	   <div class="register_con_list">
+		   	   	<span class="register_con_text">用户名&nbsp;&nbsp;&nbsp;&nbsp;</span>
+		   	   	<input type="text" name="nickname" id="nickname" placeholder="由2-16位字母数字汉字组合"
+		   	   		 onblur="nickblur()"/>	
+		   	   </div>
+		   	    <div class="register_con_list">
+		   	   	<span class="register_con_text">教师编号</span>
+		   	   	<input type="text" name="teacherNum" id="teacherNum" placeholder="由4位数字组合"
+		   	   		onblur="numblur()"/ >		   	   	
+		   	   </div>
+		   	   <div class="register_con_list">
+		   	   	<span class="register_con_text">所属部门</span>
+		   	   	<div class="register_select">
+		   	   		<select id="departmentId" name="departmentId">
+		   	   		</select>
+		   	   	</div>
+		   	   </div>
+		   	   <div class="register_con_list">
+		   	   	<span class="register_con_text">邮箱&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+		   	   	<input type="email" name="tEmail" id="tEmail" placeholder="请输入邮箱"
+		   	   		onblur="emailblur()"/>		   	   	
+		   	   </div>
+		   	   <div class="register_con_list">
+		   	   	<span class="register_con_text">真实姓名</span>
+		   	   	<input type="text" name="tName" id="tName" placeholder="请输入真实姓名"
+		   	   		onblur="nameblur()"/>		   	   	
+		   	   </div>
+		   	   <div class="register_con_list">
+		   	   	<span class="register_con_text">手机号&nbsp;&nbsp;&nbsp;&nbsp;</span>
+		   	   	<input type="tel" name="tTel" id="tTel" placeholder="请输入手机号"/ style="width:170px;"
+		   	   		onblur="telblur()">
+		   	   </div>
+		   	    <div class="register_con_list">
+		   	   	<span class="register_con_text">密码&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+		   	   	<input type="password" name="tPassword" id="tPassword" placeholder="由6—12位大小写字母及数字组合" style="width:240px;"
+		   	   		onblur="passwordblur()"/>		   	   	
+		   	   </div>
+		   	   <div class="register_con_list">
+		   	   	<span class="register_con_text">确认密码</span>
+		   	   	<input type="password" name="" id="tPassword2" placeholder="再次输入密码"
+		   	   		onblur="passwordblur2()"/>		   	   	
+		   	   </div>
+		   	   <div class="register_con_list">
+		   	   	<span class="register_con_text">验证码&nbsp;&nbsp;&nbsp;&nbsp;</span>
+		   	   	<input type="text"  id="scode" placeholder="请输入验证码"style="width:170px;" 
+		   	   		onblur="scodeblur()" />		
+		   	   	<button type="button" class="register_num yzm" id="btn" onclick="sendyzm()">获取验证码</button>
+		   	   </div>
+		   	   <button type="submit" value="提交" id="register_button" onclick="registerSubmit()">提交</button>
+		   </div>
+		</div>
+     <script src="../public/js/mui.js"></script>
+<!--<script type="text/javascript" src="../public/js/jquery-1.12.3.js" ></script>-->
+<script src="../public/js/zepto.min.js"></script>
+<script type="text/javascript" src="../public/js/app.js" ></script>
+<script type="text/javascript" src="../public/js/register.js"></script>
+<script>	
+	
+ 	function jump (id) {
+			mui.openWindow({
+				id: id,
+				url: id+'.html'			
+			});
+		}
+	/*以上是判断*/
+	 /*提交数据*/
+	function registerSubmit(){
+		if($("#nickname").val()==""||$("#teacherNum").val()=="" ||
+					$("#tName").val()=="" ||
+					$("#tTel").val()==""|| $("#tEmail").val()==""||
+					$("#scode").val()==""||$("#tPassword").val()==""||
+					$("#tPassword2").val()==""){
+			   mui.toast("请将信息填写完整");
+		   }else{
+			$.ajax({
+				type:'post',
+				url:getRootPath+'/teacher/register',
+				data:{
+					"nickname":$("#nickname").val(),
+					"teacherNum":$("#teacherNum").val(),
+					"tTel":$("#tTel").val(),
+					"tPassword":$("#tPassword").val(),
+					"departmentId":$("#departmentId").val(),
+					"tName":$("#tName").val()
+				},
+				success:function(result){
+					if(result.success){
+						mui.toast("注册成功");
+					    jump("login");
+					}else{
+						mui.toast("注册失败，请重新填写");
+					}
+				},
+				error:function(){
+					mui.toast("系统异常");
+				}
+			})
+		   }
+	}
+</script>
+</body>
+</html>
+ 

@@ -1,0 +1,40 @@
+.exchange_con {
+  width: 100%;
+  background: white;
+  margin-top: 0.44444rem; }
+  .exchange_con .exchange_con_list {
+    width: 100%;
+    padding-bottom: 0.44444rem;
+    border-bottom: 1px solid #AAAAAA;
+    box-sizing: border-box; }
+    .exchange_con .exchange_con_list .list_img_left {
+      float: left;
+      margin-left: 0.66667rem; }
+      .exchange_con .exchange_con_list .list_img_left img {
+        display: inline-block;
+        width: 2rem;
+        height: 2rem;
+        margin-top: 0.44444rem; }
+    .exchange_con .exchange_con_list .list_con {
+      float: left;
+      margin-left: 0.44444rem;
+      margin-top: 0.66667rem; }
+      .exchange_con .exchange_con_list .list_con .list_con_top {
+        font-size: 0.62222rem;
+        color: #D3A100; }
+      .exchange_con .exchange_con_list .list_con .list_con_bbt {
+        font-size: 0.53333rem;
+        color: #222222; }
+    .exchange_con .exchange_con_list .list_right {
+      float: right;
+      width: 1.15556rem;
+      height: 1.51111rem;
+      margin-right: 0.66667rem; }
+      .exchange_con .exchange_con_list .list_right img {
+        width: 100%;
+        height: 100%;
+        background-size: 100%;
+        display: inline-block;
+        margin-top: 0.66667rem; }
+
+/*# sourceMappingURL=exchange.css.map */

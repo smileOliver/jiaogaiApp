@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>签到</title>
+		<link rel="stylesheet" href="../public/css/mui.css" />
+		<script>
+		 	var html=document.documentElement;
+		 	var w = window.outerWidth || screen.width; if (w > 720){w='720'};
+		 	var fontSize = w/16 + 'px';html.style.fontSize =fontSize;
+		 </script>
+		 <link rel="stylesheet" href="../public/css/signin.css" />
+		 <link rel="stylesheet" href="../public/css/myapp.css" />
+		 <link rel="stylesheet" href="../public/css/layer.css">
+	<style>
+  .mui-segmented-control.mui-scroll-wrapper .mui-scroll
+   {
+    width: auto;
+    height: 40px;
+    white-space: nowrap;
+}
+.mui-segmented-control.mui-scroll-wrapper .mui-control-item
+{
+    display: inline-block;
+    width: auto;
+    padding: 0 20px;
+    border: 0;
+}
+.mui-segmented-control .mui-control-item
+{
+    line-height: 38px;
+
+    display: table-cell;
+    overflow: hidden;
+
+    width: 1%;
+
+    -webkit-transition: background-color .1s linear;
+            transition: background-color .1s linear;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    color:white;
+    border: none;
+    background:#8e7226;
+    border-radius:0;
+    margin-left:0px;
+    padding:0 10px;
+    font-size: 14px;
+}
+.mui-segmented-control .mui-control-item:first-child
+{
+    border-left-width: 0;
+}
+.mui-segmented-control .mui-control-item.mui-active
+{
+    color: #fff;
+    background-color: #ba9537;
+}
+.mui-segmented-control.mui-segmented-control-inverted
+{
+    width: 100%;
+
+    border: 0;
+    border-radius: 0;
+}
+.mui-segmented-control.mui-segmented-control-inverted.mui-segmented-control-vertical .mui-control-item
+{
+    border-bottom: 1px solid #c8c7cc;
+}
+.mui-segmented-control.mui-segmented-control-inverted.mui-segmented-control-vertical .mui-control-item.mui-active
+{
+    border-bottom: 1px solid #c8c7cc;
+}
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item
+{
+    color: inherit;
+    border: 0;
+}
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active
+{
+    color: #007aff;
+    border-bottom: 2px solid #007aff;
+    background: none;
+}
+.mui-segmented-control.mui-segmented-control-inverted ~ .mui-slider-progress-bar
+{
+    background-color: #007aff;
+}
+.mui-bar{
+	box-shadow: none;
+}
+.mui-bar-nav{
+	box-shadow: none;
+}
+	</style>
+	
+	
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		<h1 class="mui-title">签到</h1>
+		</header>
+		<div class="mui-content">
+			<div class="signin_con">
+				<div class="signin_con_top">
+					<div class="sigin_con_tt clear">
+					<div class="signin_left">
+						
+					</div>
+					<div class="signin_right" onclick="showLogoinBox()">立即签到</div>
+					<div id="Alert" style="display: none;"><img src="../public/image/qian_phone.png"width="170"></div>
+					<div id="Alert1" style="display: none;"><img src="../public/image/btn.png"></div>
+					<div id="tips"></div>
+					</div>
+					<div class="center_signin">
+						
+					</div>
+				</div>
+				<div class="signin_icon_con clear">
+					<div class="signin_icon_list">
+						<div class="signin_icon_img">
+							<img src="../public/image/zhuan_icon.png">
+						</div>
+						<div class="signin_icon_text">赚取积分</div>
+					</div>
+						<div class="signin_icon_list">
+						<div class="signin_icon_img">
+							<img src="../public/image/jifeb_icon.png">
+						</div>
+						<div class="signin_icon_text">积分规则</div>
+					</div>
+						<div class="signin_icon_list">
+						<div class="signin_icon_img">
+							<img src="../public/image/qian_icon.png">
+						</div>
+						<div class="signin_icon_text">积分兑换</div>
+					</div>
+				</div>
+				<div style="padding: 10px 10px; margin-top:10px;background: white;">
+				<div id="segmentedControl" class="mui-segmented-control">
+					<a class="mui-control-item mui-active" href="#item1">全部</a>
+					<a class="mui-control-item" href="#item2">收入</a>
+					<a class="mui-control-item" href="#item3">支出</a>
+				</div>
+			</div>
+				<div id="item1" class="mui-control-content mui-active">
+					<ul class="mui-table-view">			
+					</ul>
+				</div>
+					<div id="item2" class="mui-control-content">
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell clear">
+							<div class="table_left">
+								<div class="table_left_text">每日签到</div>
+								<div class="table_left_time">2017/09/21</div>
+							</div>
+							<div class="table_right">-6</div>
+						</li>
+						<li class="mui-table-view-cell clear">
+							<div class="table_left">
+								<div class="table_left_text">每日签到</div>
+								<div class="table_left_time">2017/09/21</div>
+							</div>
+							<div class="table_right">-6</div>
+						</li>
+						<li class="mui-table-view-cell clear">
+							<div class="table_left">
+								<div class="table_left_text">每日签到</div>
+								<div class="table_left_time">2017/09/21</div>
+							</div>
+							<div class="table_right">-6</div>
+						</li>
+					</ul>
+				</div>
+					<div id="item3" class="mui-control-content">
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell clear">
+							<div class="table_left">
+								<div class="table_left_text">每日签到</div>
+								<div class="table_left_time">2017/09/21</div>
+							</div>
+							<div class="table_right">+6</div>
+						</li>
+						<li class="mui-table-view-cell clear">
+							<div class="table_left">
+								<div class="table_left_text">每日签到</div>
+								<div class="table_left_time">2017/09/21</div>
+							</div>
+							<div class="table_right">+6</div>
+						</li>
+						<li class="mui-table-view-cell clear">
+							<div class="table_left">
+								<div class="table_left_text">每日签到</div>
+								<div class="table_left_time">2017/09/21</div>
+							</div>
+							<div class="table_right">+6</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		   <script type="text/javascript" src="../public/js/jquery-1.12.3.js" ></script>
+		<script type="text/javascript" src="../public/js/mui.js" ></script>
+		<script type="text/javascript" src="../public/js/app.js" ></script>
+		<script type="text/javascript" src="../public/js/zepto.min.js" ></script>
+     
+		<script type="text/javascript" src="../public/js/layer.js" ></script>
+		<script type="text/javascript" src="../public/js/qiandao.js" ></script>
+		<script>
+			  function showLogoinBox(){
+            layer.open({
+            	title: '',
+                content:$("#Alert").html(),    
+                btn:$("#Alert1").html(),
+            })
+       } 
+		</script>
+	</body>
+</html>

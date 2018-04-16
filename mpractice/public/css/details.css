@@ -1,0 +1,130 @@
+.details_con {
+  width: 100%;
+  background: white;
+  padding-top: 0.44444rem;
+  padding-bottom: 0.44444rem; }
+  .details_con .details_con_top {
+    width: 2.66667rem;
+    height: 2.66667rem;
+    float: left;
+    margin-left: 0.66667rem; }
+    .details_con .details_con_top img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%; }
+  .details_con .details_con_left {
+    width: 11.55556rem;
+    float: left;
+    margin-left: 3.77778rem;
+    margin-top: -2.22222rem; }
+    .details_con .details_con_left .details_left_top {
+      width: 100%;
+      float: left; }
+      .details_con .details_con_left .details_left_top .details_text {
+        float: left;
+        font-size: 0.62222rem;
+        color: #D3A100; }
+      .details_con .details_con_left .details_left_top .details_right {
+        float: right;
+        margin-right: 0.66667rem; }
+        .details_con .details_con_left .details_left_top .details_right img {
+          width: 0.53333rem;
+          display: inline-block;
+          margin-top: 0.11111rem; }
+        .details_con .details_con_left .details_left_top .details_right span {
+          font-size: 0.62222rem; }
+    .details_con .details_con_left .details_left_con {
+      color: #222222; }
+    .details_con .details_con_left .details_img {
+      width: 100%;
+      margin-top: 0.44444rem; }
+      .details_con .details_con_left .details_img .details_img_list {
+        float: left;
+        margin-left: 0.44444rem; }
+        .details_con .details_con_left .details_img .details_img_list img {
+          width: 4rem;
+          height: 2.22222rem; }
+    .details_con .details_con_left .details_time {
+      font-size: 0.44444rem;
+      margin-top: 0.44444rem; }
+
+.comment_con {
+  width: 100%;
+  background: white;
+  margin-top: 0.44444rem; }
+  .comment_con .comment_top {
+    width: 100%; }
+    .comment_con .comment_top .comment_left {
+      width: 5.77778rem;
+      background: #EFEFEF;
+      float: left;
+      margin-left: 0.66667rem;
+      height: 0.04444rem;
+      margin-top: 0.88889rem; }
+    .comment_con .comment_top .comment_text {
+      font-size: 0.62222rem;
+      color: #222222;
+      float: left;
+      margin-left: 0.44444rem;
+      margin-top: 0.44444rem; }
+    .comment_con .comment_top .comment_right {
+      width: 5.77778rem;
+      border: 0.02222rem solid #EFEFEF;
+      float: left;
+      margin-left: 0.44444rem;
+      margin-top: 0.88889rem; }
+  .comment_con .comment_list_con {
+    width: 100%; }
+    .comment_con .comment_list_con .comment_list {
+      width: 100%;
+      padding-bottom: 0.44444rem;
+      margin-top: 0.08889rem; }
+      .comment_con .comment_list_con .comment_list .comment_center_img {
+        width: 15%;
+        float: left; }
+        .comment_con .comment_list_con .comment_list .comment_center_img img {
+          display: inline-block;
+          width: 1.77778rem;
+          height: 1.77778rem;
+          border-radius: 50%;
+          margin-left: 0.66667rem; }
+
+.comment_center_left {
+  width: 78%;
+  float: left;
+  margin-left: 0.44444rem; }
+  .comment_center_left .comment_left_text {
+    color: #D3A100;
+    font-size: 0.53333rem;
+    float: left; }
+  .comment_center_left .comment_left_con {
+    width: 100%;
+    color: #222222;
+    font-size: 0.53333rem;
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; }
+
+.comment_center_left2 .comment_center_time {
+  float: left;
+  font-size: 0.44444rem;
+  margin-top: 0.22222rem; }
+.comment_center_left2 .comment_center_tt {
+  float: left;
+  font-size: 0.44444rem;
+  margin-left: 0.44444rem;
+  margin-top: 0.22222rem; }
+.comment_center_left2 .comment_center_right {
+  float: right; }
+  .comment_center_left2 .comment_center_right .right_img img {
+    display: inline-block;
+    width: 0.8rem;
+    margin-top: 0.04444rem;
+    margin-left: 0.44444rem; }
+  .comment_center_left2 .comment_center_right .right_text {
+    font-size: 0.44444rem; }
+
+/*# sourceMappingURL=details.css.map */

@@ -1,0 +1,53 @@
+$ppr:720/16/1rem;
+.collection_con{
+    position: absolute;
+    width: 100%;
+    top:400/$ppr;
+    .collection_con_top{
+        width: 540/$ppr;
+        margin: auto;
+        .collection_con_list{
+            float: left;
+            width: 260/$ppr;
+            height: 260/$ppr;
+            border-radius: 20/$ppr;
+            .collection_list_img{
+                width: 112/$ppr;
+                height: 112/$ppr;
+                
+                img{
+                    display: inline-block;
+                    width: 100%;
+                    margin-left: 74/$ppr;
+                    margin-top:44/$ppr;
+                }
+            }
+            .collection_list_text{
+               
+                text-align: center;
+                color: white;
+                font-size: 28/$ppr;
+                margin-top: 60/$ppr;
+            }
+        }
+        .Anli{
+            background:#768564 ;
+        }
+        .Biji{
+            background:#8e7d5b;
+            margin-left: 20/$ppr;
+            img{
+                width: 90%;
+            }
+        }
+        .Tiezi{
+            background:#6a7acc;
+            margin-top: 20/$ppr;
+        }
+        .news{
+            background: #5accbe;
+             margin-left: 20/$ppr;
+             margin-top: 20/$ppr;
+        }
+    }
+}

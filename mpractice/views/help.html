@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>意见反馈</title>
+		<link rel="stylesheet" href="../public/css/mui.css" />
+		<script>
+		 	var html=document.documentElement;
+		 	var w = window.outerWidth || screen.width; if (w > 720){w='720'};
+		 	var fontSize = w/16 + 'px';html.style.fontSize =fontSize;
+		 </script>
+		 <link rel="stylesheet" href="../public/css/dloword.css" />
+		 <link rel="stylesheet" href="../public/css/help.css"/>
+		 <link rel="stylesheet" href="../public/css/myapp.css" />
+	      <style>
+		 	.register_con{
+		 		padding-bottom: 0;
+		 	}
+		 	.button_password{
+		 		width: 90%;
+		 		margin: auto;
+		 		margin-top: 20px;
+		 	}
+		 	.button_password button{
+		 		width:100%;
+		 		font-size: 18px;
+		 		padding-top: 7px;
+		 		padding-bottom: 7px;
+		 		background: #D3A100;
+		 		outline: none;
+		 		border: none;
+		 		border-radius: 10px;
+		 		color: white;
+		 	}
+		 	#textarea{
+		 		height: 200px;
+		 	}
+		 	.mui-content{
+		 		margin-top: 2.0rem;
+		 	}
+		 </style>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav" id="header">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title"意见反馈</h1>
+		</header>
+		<div class="mui-content">
+				<div class="mui_table">
+				<div class="mui_table_hd clear">
+					<div class="mui_table_hd_list active" id="mui_table_hd_list2">我的反馈</div>
+					<div class="mui_table_hd_list" id="mui_table_hd_list1">我要反馈</div>
+				</div>
+				<div class="mui_table_bd" style="display: block;">
+					<div class="mui-scroll-wrapper" id="pullrefresh">           
+					    <div class="mui-scroll">
+					        <ul  class="mui-table-view" id="newsMore">
+					        </ul>
+						</div>
+					</div>
+				</div>
+				<div class="mui_table_bd" style="padding-top: 10px;" >
+				<div class="mui_table_bd_con clear">
+				  <div class="mui-input-row" style="margin: 10px 5px;">
+					<textarea id="textarea" rows="5" class="fb_content" style="color: #222222;" placeholder="您好！请描述你所遇到的问题！"></textarea>
+					</div> 
+			    </div>
+			<div class="button_password">
+		      	<button value="发送" id="seasuss">发送</button>
+		      </div>
+				</div>
+			</div>
+		</div>
+		 <script src="../public/js/mui.js"></script>
+     <script src="../public/js/zepto.min.js"></script>
+     <script type="text/javascript" src="../public/js/app.js" ></script>
+     <script type="text/javascript" src="../public/js/help.js" ></script>
+     <script>
+     	$(".mui_table_hd_list").click(function(){
+   	   var  index_div = $(this).index()
+   	   $(this).addClass("active").siblings().removeClass("active");
+   	   $(".mui_table_bd").hide().eq($(this).index()).show();
+   })
+     </script>
+		
+	</body>
+</html>

@@ -1,0 +1,105 @@
+.myindex_top {
+  width: 100%;
+  background: #169eeb;
+  padding-top: 2.66667rem;
+  padding-bottom: 0.88889rem; }
+  .myindex_top .myindex_phones {
+    width: 2.66667rem;
+    height: 2.66667rem;
+    margin: auto; }
+    .myindex_top .myindex_phones img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%; }
+  .myindex_top .my-index_text {
+    text-align: center;
+    color: white;
+    font-size: 0.62222rem;
+    margin-top: 0.44444rem; }
+
+.myindex_bt {
+  width: 100%;
+  margin-top: 0.44444rem;
+  background: white;
+  padding-top: 0.44444rem;
+  padding-bottom: 0.44444rem; }
+  .myindex_bt .myindex_bt_litem {
+    width: 33.3%;
+    float: left; }
+    .myindex_bt .myindex_bt_litem .myindex_bt_litem_img {
+      width: 0.97778rem;
+      height: 0.97778rem;
+      margin: auto; }
+      .myindex_bt .myindex_bt_litem .myindex_bt_litem_img img {
+        width: 100%; }
+    .myindex_bt .myindex_bt_litem .myindex_bt_litem_text {
+      font-size: 0.71111rem;
+      text-align: center;
+      margin-top: 0.22222rem; }
+
+.mui-bottom-view {
+  width: 100%;
+  background: white;
+  margin-top: 0.44444rem; }
+  .mui-bottom-view .mui-bottom-view-litem {
+    width: 95%;
+    margin-left: 5%;
+    border-bottom: 1px solid #AAAAAA;
+    height: 2rem;
+    line-height: 2rem; }
+    .mui-bottom-view .mui-bottom-view-litem .mui_litem_left {
+      float: left; }
+      .mui-bottom-view .mui-bottom-view-litem .mui_litem_left img {
+        display: inline-block;
+        width: 0.97778rem;
+        height: 0.97778rem;
+        margin-top: 0.44444rem; }
+    .mui-bottom-view .mui-bottom-view-litem .mui_litem_left_text {
+      float: left;
+      margin-left: 0.44444rem; }
+    .mui-bottom-view .mui-bottom-view-litem .mui_litem_right {
+      float: right;
+      margin-right: 0.66667rem; }
+      .mui-bottom-view .mui-bottom-view-litem .mui_litem_right img {
+        display: inline-block;
+        width: 0.44444rem;
+        height: 0.71111rem;
+        margin-top: 0.44444rem; }
+
+.index_icon {
+  width: 1.06667rem;
+  height: 1.06667rem;
+  background: url(../image/shouyeb.png) no-repeat;
+  background-size: 100%; }
+
+.index_icon.active {
+  background: url(../image/shouye.png) no-repeat; }
+
+.notes_icon {
+  width: 1.06667rem;
+  height: 1.06667rem;
+  background: url(../image/bijia.png) no-repeat;
+  background-size: 100%; }
+
+.notes_icon.active {
+  background: url(../image/bijic.png) no-repeat; }
+
+.community_icon {
+  width: 1.06667rem;
+  height: 1.06667rem;
+  background: url(../image/shequ.png) no-repeat;
+  background-size: 100%; }
+
+.community_icon.active {
+  background: url(../image/shequc.png) no-repeat; }
+
+.my_icon {
+  width: 1.06667rem;
+  height: 1.06667rem;
+  background: url(../image/myicon.png);
+  background-size: 100%; }
+
+.my_icon.active {
+  background: url(../image/myb.png); }
+
+/*# sourceMappingURL=myindex.css.map */

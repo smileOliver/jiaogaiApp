@@ -1,0 +1,48 @@
+.news_con {
+  width: 100%;
+  background: white;
+  margin-top: 0.44444rem;
+  padding-top: 0.44444rem;
+  padding-bottom: 0.44444rem; }
+  .news_con .news_con_list {
+    width: 90%;
+    margin: auto;
+    border-bottom: 1px solid #AAAAAA;
+    box-sizing: border-box;
+    padding-bottom: 0.44444rem; }
+    .news_con .news_con_list .news_con_list_img {
+      width: 2.66667rem;
+      height: 2.66667rem;
+      float: left; }
+      .news_con .news_con_list .news_con_list_img img {
+        width: 100%;
+        border-radius: 50%; }
+    .news_con .news_con_list .news_con_list_top {
+      float: left;
+      margin-left: 0.44444rem; }
+      .news_con .news_con_list .news_con_list_top .news_list_con_text {
+        float: left;
+        font-size: 0.62222rem;
+        color: #D3A100; }
+      .news_con .news_con_list .news_con_list_top .news_list_time {
+        float: left;
+        margin-left: 4rem;
+        font-size: 0.44444rem; }
+      .news_con .news_con_list .news_con_list_top .news_list_span {
+        float: left;
+        margin-left: 0.44444rem;
+        padding: 0rem 0.35556rem;
+        line-height: 0.88889rem;
+        text-align: center;
+        color: white;
+        background: #D3A100;
+        border-radius: 0.22222rem;
+        font-size: 0.44444rem; }
+    .news_con .news_con_list .news_list_bttom {
+      width: 78%;
+      float: left;
+      font-size: 0.53333rem;
+      margin-left: 0.44444rem;
+      margin-top: 0.22222rem; }
+
+/*# sourceMappingURL=news.css.map */

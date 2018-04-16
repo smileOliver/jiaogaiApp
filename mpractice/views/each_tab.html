@@ -1,0 +1,317 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<script src="http://libs.baidu.com/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://echarts.baidu.com/dist/echarts.min.js" type="text/javascript" charset="utf-8"></script> 
+<style>
+.formTab ul{ height:30px;}
+.formTab ul{ margin:10px 0}
+.formTab ul li{ float:left; background-color:#FDFDFD; color:#222; line-height:30px; padding:0 15px;  margin-right:-1px; border:1px solid #C3C3C3}
+.formTab ul li.on{ background-color:#25BDFF; color:#FFF}
+.echarts li div{ width:100%; min-height:500px;}
+ 
+.echarts > li{ width:100%; display:none; min-height:500px;}
+</style>
+<script type="text/javascript">
+$(".table .formTab ul li").first().addClass("on");
+//$(".echarts li").show()
+$(".echarts li").first().show();
+$(".table .formTab ul li").bind("click",function(){
+$(this).addClass("on").siblings().removeClass("on");
+$('.echarts li:eq('+ $('.table .formTab ul li').index(this) +')').show().siblings("li").hide();
+})
+ 
+var xHoursTime=['0-1min','1-3min','3-10min','10-30min','30-60min','1h-3h','>=3h']
+ 
+ 
+var todayTime =[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23]
+var todayDown =   [35,80,40,30,25,55,2];
+var todayInstall =[25,35,20,10,22,18,1];
+var todayLogin =  [15,20,10,15,15,50,33,36,20];
+var yestTime =[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23]
+var yestDown =   [5,0,0,0,0,0,10,15,15,20,10,15,15,20,50,35,80,40,30,25,55,80,93,76,20];
+var yestInstall =[5,0,0,0,0,0,10,10,11,15,10,15,15,16,40,25,35,20,10,22,18,70,43,56,20];
+var yestLogin =  [3,0,0,0,0,0,10,10,11,15,10,15,15,16,20,15,15,20,10,15,15,50,33,36,20];
+ 
+// 路径配置 
+require.config({
+paths:{
+//echarts:'../js/build/dist'
+echarts:'http://echarts.baidu.com/build/dist/'
+}
+})
+//使用
+require(
+        [
+            'echarts',
+            'echarts/chart/funnel',
+            'echarts/chart/pie',
+'echarts/chart/line',
+'echarts/chart/bar'
+        ],
+        function(ec) {
+//今日点击 下载 安装
+var todayNum = ec.init(document.getElementById('todayNum'));
+window.onresize = todayNum.resize;
+todayNum.setOption({
+title : {
+text:'机会多APP每次启动使用时长'
+},
+tooltip : {
+trigger: 'axis',
+axisPointer:{
+show: true,
+lineStyle: {
+type : 'dashed',
+width : 1
+}
+},
+},
+legend: {
+data:['活跃用户','启动次数']
+},
+toolbox: {
+show : true,
+orient : 'vertical',
+        y : 'center',
+feature : {
+mark : {show: true},
+dataView : {readOnly:true},
+magicType : {show: true, type: ['line', 'bar', 'stack', 'tiled']},
+restore : {show: true},
+saveAsImage : {show: true}
+}
+},
+calculable : true,
+xAxis : [
+{
+type : 'category',
+boundaryGap : true,
+data:xHoursTime,
+}
+],
+yAxis : [
+{
+type : 'value'
+}
+],
+series : [
+{
+name:'活跃用户',
+type:'bar',
+markPoint : {
+data : [
+{type : 'max', name: '最大值'},
+{type : 'min', name: '最小值'}
+]
+},
+markLine : {
+data : [
+{type : 'average', name: '平均值'}
+]
+},
+data:todayDown,
+ 
+},
+{
+name:'启动次数',
+type:'bar',
+data: todayInstall,
+},
+]           
+});
+ 
+var todayNumPie = ec.init(document.getElementById('todayNumPie'));
+window.onresize = todayNumPie.resize;
+todayNumPie.setOption({
+title : {
+text: '每次启动使用时长',
+x:'center'
+},
+tooltip : {
+trigger: 'item',
+formatter: "{a} <br/>{b} : {c} ({d}%)"
+},
+legend: {
+orient : 'vertical',
+x : 'left',
+data:xHoursTime
+},
+calculable : true,
+series : [
+{
+name:'访问来源',
+type:'pie',
+radius : '55%',
+center: ['50%', 225],
+data:[
+{value:35, name:'0-1min'},
+{value:80, name:'1-3min'},
+{value:40, name:'3-10min'},
+{value:30, name:'10-30min'},
+{value:25, name:'30-60min'},
+{value:55, name:'1h-3h'},
+{value:2, name:'>=3h'}
+]
+}
+]
+});
+ 
+//昨日 新增
+var YesNum = ec.init(document.getElementById('YesNum'));
+window.onresize = YesNum.resize;
+YesNum.setOption({
+title : {
+text:'昨日活跃用户量'
+},
+tooltip : {
+trigger: 'axis',
+axisPointer:{
+show: true,
+//type : 'cross',
+lineStyle: {
+type : 'dashed',
+width : 1
+}
+},
+},
+legend: {
+data:['DAU','新用户','老用户']
+},
+toolbox: {
+show : true,
+feature : {
+mark : {show: true},
+dataView : {readOnly:true},
+magicType : {show: true, type: ['line', 'bar', 'stack', 'tiled']},
+restore : {show: true},
+saveAsImage : {show: true}
+}
+},
+calculable : true,
+dataZoom : {
+show : true,
+realtime : true,
+start : 30,
+end : 70
+},
+xAxis : [
+{
+type : 'category',
+boundaryGap : true,
+data:todayTime,
+}
+],
+yAxis : [
+{
+type : 'value'
+}
+],
+series : [
+{
+name:'DAU',
+type:'line',
+data:yestDown,
+},
+{
+name:'新用户',
+type:'line',
+data: yestInstall,
+},
+{
+name:'老用户',
+type:'line',
+data: yestLogin,
+}
+]           
+});
+ 
+//近7日点击 下载 安装
+ 
+var weeksNum = ec.init(document.getElementById('weeksNum'));
+window.onresize = weeksNum.resize;
+weeksNum.setOption({
+title : {
+text:'近7日活跃用户'
+},
+tooltip : {
+trigger: 'axis',
+axisPointer:{
+show: true,
+//type : 'cross',
+lineStyle: {
+type : 'dashed',
+width : 1
+}
+},
+},
+legend: {
+data:['DAU','新用户','老用户']
+},
+toolbox: {
+show : true,
+feature : {
+mark : {show: true},
+dataView : {readOnly:true},
+magicType : {show: true, type: ['line', 'bar', 'stack', 'tiled']},
+restore : {show: true},
+saveAsImage : {show: true}
+}
+},
+calculable : true,
+//dataZoom : {show : true,realtime : true,start : 30,end : 70},
+xAxis : [
+{
+type : 'category',
+boundaryGap : true,
+data : sevenTime,
+}
+],
+yAxis : [
+{type : 'value'}
+],
+series : [
+{
+name:'DAU',
+type:'line',
+data:sevenDown,
+},
+{
+name:'新用户',
+type:'line',
+data:sevenInstall,
+},
+{
+name:'老用户',
+type:'line',
+data:sevenLogin,
+}
+]           
+});
+ 
+        }
+    );
+ 
+ 
+</script>
+</head>
+ 
+ 
+<body>
+<div class="table">
+<div class="formTab">
+                        <ul><li>今天</li><li>昨天</li><li>近七天</li></ul>
+                   </div>
+                   <ul class="echarts">
+                       <li><div id="todayNumPie" style="width:45%; float:left;"></li>
+                       <li><div id="YesNum"></div></li>
+                       <li><div id="todayNum" style="width:50%; float:left;"></div></li>
+                        
+                    </ul>
+ 
+</div>
+ 
+</body>
+</html>

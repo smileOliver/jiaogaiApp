@@ -1,0 +1,60 @@
+$ppr:720/16/1rem;
+.mui_tab{
+    width:100%;
+    .mui_tab_hd{
+        float: left;
+        width: 180/$ppr;
+        text-align: center;    
+        color: #222222;
+        .mui_tab_hd_list{
+            background: white;
+            padding-top: 20/$ppr;
+            padding-bottom: 20/$ppr;
+            margin-top: 2/$ppr;
+            text-align: center;
+            font-size: 28/$ppr;
+        }
+        .mui_tab_hd_list.active{
+            color:#D3A100;
+            background:#EFEFEF;
+        }
+    }
+    .mui_tab_bd{
+        float: left;
+        width: 490/$ppr;
+        margin-left: 20/$ppr;
+        .mui_bd_con{
+            width: 100%;
+          display: none;
+            .mui_bd_con_top{
+                width: 490/$ppr;
+                height: 100/$ppr;
+                img{
+                    width: 490/$ppr;
+                    height: 100/$ppr;
+                    display: block;
+                    margin-top: 20/$ppr;
+                }
+            }
+            .mui_bd_table{
+                width: 100%;
+                .mui_bd_table_text{
+                    font-size: 32/$ppr;
+                    color: #222222;
+                    margin-top: 20/$ppr;
+                }
+                .mui_bd_con1 {
+                   margin-top: 20/$ppr;
+                    .mui_bd_con_list{
+                     background: white;
+                    font-size: 28/$ppr;
+                    padding: 5/$ppr 15/$ppr;
+                    margin-left: 20/$ppr;
+                    float: left; 
+                    border-radius: 10/$ppr;
+                    }
+                }
+            }
+        }
+    }
+}

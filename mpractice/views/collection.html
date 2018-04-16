@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>我的收藏</title>
+		<link rel="stylesheet" href="../public/css/mui.css" />
+		<script>
+		 	var html=document.documentElement;
+		 	var w = window.outerWidth || screen.width; if (w > 720){w='720'};
+		 	var fontSize = w/16 + 'px';html.style.fontSize =fontSize;
+		 </script>
+		 <link rel="stylesheet" href="../public/css/dloword.css" />
+		 <link rel="stylesheet" href="../public/css/collection.css"/>
+		 <link rel="stylesheet" href="../public/css/myapp.css" />
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav" id="header">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">我的收藏</h1>
+		</header>
+		<div class="mui-content">
+			<div class="mui-scroll">
+			<div id="tabbar" class="mui-control-content mui-active">
+			   <div id="slider" class="mui-slider">
+					<div class="mui-slider-group mui-slider-loop" id="photo">
+						<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+						<div class="mui-slider-item mui-slider-item-duplicate">
+							<a href="#">
+								<img src="../public/image/banner1.jpg">
+							</a>
+						</div>
+						<!-- 第一张 -->
+						<div class="mui-slider-item">
+							<a href="#">
+								<img src="../public/image/banner2.jpg">
+							</a>
+						</div>
+						<!-- 第二张 -->
+						<div class="mui-slider-item">
+							<a href="#">
+								<img src="../public/image/banner3.jpg">
+							</a>
+						</div>
+						<!-- 第三张 -->
+						<div class="mui-slider-item">
+							<a href="#">
+								<img src="../public/image/banner2.jpg">
+							</a>
+						</div>
+						<!-- 第四张 -->
+						<div class="mui-slider-item">
+							<a href="#">
+								<img src="../public/image/banner1.jpg">
+							</a>
+						</div>
+						<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+						<div class="mui-slider-item mui-slider-item-duplicate">
+							<a href="#">
+								<img src="../public/image/banner1.jpg">
+							</a>
+						</div>
+					</div>
+					<div class="mui-slider-indicator" id="dian">
+						<div class="mui-indicator mui-active"></div>
+						<div class="mui-indicator"></div>
+						<div class="mui-indicator"></div>
+						<div class="mui-indicator"></div>
+					</div>
+					<!--以上是banner-->
+				</div>
+		</div>
+		</div>
+		   <div class="collection_con">
+		   	   <div class="collection_con_top clear">
+		   	   	  <div class="collection_con_list Anli">
+		   	   	  	  <div class="collection_list_img">
+		   	   	  	  	 <img src="../public/image/anli.png">
+		   	   	  	  </div>
+		   	   	  	  <div class="collection_list_text">穴位</div>
+		   	   	  </div>
+		   	   	  <div class="collection_con_list Biji">
+		   	   	  	  <div class="collection_list_img">
+		   	   	  	  	 <img src="../public/image/biji1.png" style="height:56px">
+		   	   	  	  </div>
+		   	   	  	  <div class="collection_list_text">笔记</div>
+		   	   	  </div>
+		   	   </div>
+		   	     <div class="collection_con_top clear">
+		   	   	  <div class="collection_con_list Tiezi">
+		   	   	  	  <div class="collection_list_img">
+		   	   	  	  	 <img src="../public/image/shoucang.png">
+		   	   	  	  </div>
+		   	   	  	  <div class="collection_list_text">帖子</div>
+		   	   	  </div>
+		   	   	 </div>
+		   </div>
+		</div>
+		<script src="../public/js/mui.js"></script>
+		<script type="text/javascript" src="../public/js/zepto.min.js" ></script>
+		<script type="text/javascript" src="../public/js/app.js" ></script>
+		
+		<script>
+			var Anli =$('.Anli')[0]
+			var Biji=$('.Biji')[0]
+			var Tiezi=$('.Tiezi')[0]
+			Anli.addEventListener("tap",function(){
+				jump('XueW')
+			})
+			Biji.addEventListener("tap",function(){
+				jump('my_notes')
+			})
+			Tiezi.addEventListener("tap",function(){
+				jump('my_com_sheq')
+			})
+			function jump (id) {
+			mui.openWindow({
+				id: id,
+				url: id+'.html'			
+			});
+		}
+		</script>
+	</body>
+</html>

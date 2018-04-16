@@ -1,0 +1,68 @@
+.mui_records_tab {
+  width: 100%;
+  margin-top: 0.44444rem; }
+  .mui_records_tab .mui_records_hd {
+    width: 100%; }
+    .mui_records_tab .mui_records_hd .mui_records_m {
+      width: 100%;
+      background: white;
+      line-height: 1.42222rem;
+      height: 1.42222rem;
+      font-size: 0.71111rem;
+      color: #222222;
+      text-align: center; }
+
+.mui_records_con {
+  width: 100%;
+  margin-top: 0.44444rem; }
+  .mui_records_con .mui_records_sm {
+    width: 100%;
+    display: none; }
+    .mui_records_con .mui_records_sm .mui_records_sm_list {
+      width: 100%;
+      width: 100%;
+      background: #F9F9EC;
+      line-height: 1.42222rem;
+      height: 1.42222rem;
+      font-size: 0.71111rem;
+      color: #222222;
+      text-align: center;
+      margin-top: 0.04444rem; }
+    .mui_records_con .mui_records_sm .mui_records_sm_list.active {
+      color: #EAB900; }
+
+#mui_records_bttom {
+  width: 100%;
+  display: none; }
+  #mui_records_bttom .mui_records_bttom_list {
+    width: 100%;
+    background: white;
+    padding-top: 0.44444rem;
+    padding-bottom: 0.44444rem;
+    margin-top: 0.04444rem; }
+    #mui_records_bttom .mui_records_bttom_list .mui_records_bttom_text {
+      float: left;
+      font-size: 0.71111rem;
+      color: #222222;
+      margin-left: 0.44444rem; }
+    #mui_records_bttom .mui_records_bttom_list .mui_redords_bttom_con {
+      width: 86%;
+      float: left;
+      margin-left: 1.71111rem;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+      font-size: 0.62222rem;
+      color: #222222; }
+      #mui_records_bttom .mui_records_bttom_list .mui_redords_bttom_con span {
+        color: #AAAAAA; }
+
+.mui_records_bttom_left {
+  float: left;
+  margin-left: 0.66667rem; }
+  .mui_records_bttom_left img {
+    width: 0.75556rem;
+    height: 0.75556rem; }
+
+/*# sourceMappingURL=records.css.map */

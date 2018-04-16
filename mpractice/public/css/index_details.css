@@ -1,0 +1,33 @@
+.index_details_con {
+  width: 100%; }
+  .index_details_con .index_details_top {
+    width: 100%; }
+  .index_details_con .index_details_center {
+    width: 100%;
+    margin-top: 0.22222rem; }
+    .index_details_con .index_details_center .index_details_text {
+      width: 100%;
+      background: white;
+      padding-top: 0.22222rem;
+      padding-bottom: 0.22222rem; }
+      .index_details_con .index_details_center .index_details_text .index_details_bt {
+        width: 1.95556rem;
+        background: #E9B900;
+        padding: 0.11111rem 0.22222rem;
+        text-align: center;
+        border-radius: 0.22222rem;
+        color: white;
+        margin: auto; }
+    .index_details_con .index_details_center .index_details_bttom {
+      width: 100%;
+      background: white;
+      padding-top: 0.44444rem;
+      padding-bottom: 0.44444rem;
+      margin-top: 0.04444rem; }
+      .index_details_con .index_details_center .index_details_bttom p {
+        width: 90%;
+        margin: auto;
+        font-size: 0.62222rem;
+        color: #222222; }
+
+/*# sourceMappingURL=index_details.css.map */

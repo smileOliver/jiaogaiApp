@@ -1,0 +1,115 @@
+$ppr:720/16/1rem;
+.zlogin_info{
+     width: 100%; 
+     background: #169eeb;
+     height:540/$ppr;
+   .zlogin_info_div{
+    width:500/$ppr;
+    margin: auto;
+   }
+    .zlogin_info_div input{      
+    width:500/$ppr;
+    margin:auto;
+    background:white;
+    border-radius: 20/$ppr; 
+    font-size:28/$ppr;
+    }
+    #account{
+         display: inline-block;
+        margin-top:130/$ppr;
+    }
+    #password{
+        margin-top:30/$ppr;
+    }
+    .zlogin_info_button{
+        width:500/$ppr;
+        margin: auto;
+        margin-top: 50/$ppr;
+    }
+    .zlogin_info_button button{
+        width: 500/$ppr;
+        background: none;
+        border: 2px solid white;
+        height: 80/$ppr;
+        color: white;
+        border-radius: 20/$ppr;
+        font-size:36/$ppr;
+    
+    }
+    .zlogin_info_text{
+        width:500/$ppr;
+        margin: auto;
+        color: white;
+        font-size:28/$ppr;
+        margin-top:10/$ppr;
+        #register{
+            float: left;
+        }
+        #F_password{
+            float: right;
+        }
+    }
+    
+}
+.zlogin_info_account{
+        width:100%;
+        margin-top:110/$ppr;
+       .zlogin_info_account_left{
+           width:150/$ppr;
+           float: left;
+           margin-left: 30/$ppr;
+           height:2/$ppr;
+           background: #AAAAAA;
+           margin-top:24/$ppr;
+       }
+       .zlogin_info_account_centeer{
+           float: left;
+           margin-left:60/$ppr;
+           font-size:32/$ppr;
+       }
+       .zlogin_info_account_right{
+           width:150/$ppr;
+           float: right;
+           margin-right: 30/$ppr;
+            height:2/$ppr;
+           background: #AAAAAA;
+           margin-top:24/$ppr;
+           
+       }
+    }
+.zlogin_info_phone{
+     width: 500/$ppr;
+     margin: auto;
+     margin-top: 60/$ppr;
+     .zlogin_info_phone_list{
+         float: left;
+        margin-left:100/$ppr;
+        .zlogin_info_wx{
+            width: 100/$ppr;
+            height: 100/$ppr;
+            border-radius:50%;
+            background: #D3A100 url(../image/weixin.png) no-repeat center;
+            background-size: 70%;
+        }
+        .zlogin_text{
+            text-align: center;
+            font-size: 32/$ppr;
+            color: #222222;
+            }
+        .zlogin_info_wb{
+            width: 100/$ppr;
+            height: 100/$ppr;
+            border-radius:50%;
+            background: #D3A100 url(../image/weib.png) no-repeat center;
+            background-size: 70%;
+        }
+        .zlogin_info_qq{
+            width: 100/$ppr;
+            height: 100/$ppr;
+            border-radius:50%;
+            background: #D3A100 url(../image/qq.png) no-repeat center;
+            background-size: 70%;
+        }
+     }
+     
+}

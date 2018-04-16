@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta http-equiv="Access-Control-Allow-Origin" content="">
+        <meta http-equiv="content-security-policy">
+		<title>我的下载</title>
+		<link rel="stylesheet" href="../public/css/mui.css" />
+		<script>
+		 	var html=document.documentElement;
+		 	var w = window.outerWidth || screen.width; if (w > 720){w='720'};
+		 	var fontSize = w/16 + 'px';html.style.fontSize =fontSize;
+		 </script>
+		 <link rel="stylesheet" href="../public/css/dloword.css" />
+		 <link rel="stylesheet" href="../public/css/myapp.css" />
+		 <style>		
+		 </style>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		<h1 class="mui-title">我的下载</h1>
+		</header>
+		<div class="mui-content">
+			<div class="mui_table">
+				<div class="mui_table_hd clear">
+					<div class="mui_table_hd_list active" id="mui_table_hd_list2">影像</div>
+					<div class="mui_table_hd_list" id="mui_table_hd_list1">医案</div>
+					<div class="mui_table_hd_list" id="mui_table_hd_list1">图片</div>
+				</div>
+				<div class="mui_table_bd" style="display: block;">
+					<div class="mui_table_bd_list clear">
+						<div class="list-left">
+							<img src="../public/image/img.jpg">
+						</div>
+						<div class="list_left-con">
+							<div class="list_left_con_top">疾风时刻</div>
+							<div class="list_left_con_btn">210M</div>
+							<div class="list_left_con_bbt clear">
+								<div class="list_left_bbt_lefgt">
+									时长：50分钟
+								</div>
+								<div class="list_left_bbt_right">
+									下载时间：2017/10/30
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mui_table_bd" >
+					<div class="mui_table_bd_list clear">
+						<div class="list-left1">
+							<img src="../public/image/img.jpg">
+						</div>
+						<div class="list_left-con">
+							<div class="list_left_con_top">笔记名称</div>
+							<div class="list_left_con_btn1">这是文字这是文字这是文字这是这是文字</</div>
+							<div class="list_left_con_bbt clear">
+								
+								<div class="list_left_bbt_right1">
+									下载时间：2017/10/30
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	 <script src="../public/js/mui.js"></script>
+     <script src="../public/js/zepto.min.js"></script>
+     <script type="text/javascript" src="../public/js/app.js" ></script>
+     <script>
+     	$(".mui_table_hd_list").click(function(){
+   	   var  index_div = $(this).index()
+   	   $(this).addClass("active").siblings().removeClass("active");
+   	   $(".mui_table_bd").hide().eq($(this).index()).show();
+   })
+     </script>
+	</body>
+</html>

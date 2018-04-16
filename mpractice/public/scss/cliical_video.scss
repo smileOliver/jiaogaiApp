@@ -1,0 +1,86 @@
+$ppr:720/16/1rem;
+.clinical_con{
+    width: 100%;
+    margin-top: 20/$ppr;
+    .clinical_con_list{
+        width: 100%;
+        margin-top: 2/$ppr;
+        .clinical_top{
+            width: 100%;
+            background: white;
+            padding-top: 20/$ppr;
+            padding-bottom:10/$ppr;
+            .clinical_top_img{
+                float: left;
+                margin-left: 30/$ppr;
+                img{
+                    width: 40/$ppr;
+                    height: 40/$ppr;
+                }
+            }
+            .clinical_top_text{
+                float: left;
+                margin-left: 20/$ppr;
+                color: #222222;
+            }
+            .clinical_top_right{
+                float: right;
+                margin-right: 30/$ppr;
+                font-size: 28/$ppr;
+                color: #AAAAAA;
+                img{
+                    width: 18/$ppr;
+                    height: 32/$ppr;
+                    display: inline-block;
+                    margin-top:10/$ppr;
+                    margin-left: 20/$ppr;
+                }
+            }
+        }
+        .clinical_list_cc{
+            width: 100%;         
+            background: white;
+            padding-bottom: 20/$ppr;
+        
+       
+        .image_con_left{
+            width:42.5%;
+            float: left;
+             margin-top: 20/$ppr;
+             margin-left: 5%;
+            .image_left_img{
+                width: 100%;
+                height:150/$ppr;
+                
+                img{
+                 width: 100%;
+                height:150/$ppr; 
+            }
+            .iext_text{
+                font-size: 28/$ppr;
+                color: #222222;
+                margin-top: 10/$ppr;
+            }
+            
+        }
+        .image_con_right{
+            width:46%;
+            float: left;
+            margin-left: 8%;
+             margin-top: 20/$ppr;
+            .image_left_img{
+                width: 100%;
+                height:150/$ppr;
+                background: #666666;
+            }
+            .iext_text{
+                font-size: 28/$ppr;
+                color: #222222;
+                margin-top: 10/$ppr;
+            }
+            
+        }
+    }
+        }
+    }
+}

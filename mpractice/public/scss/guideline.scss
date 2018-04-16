@@ -1,0 +1,29 @@
+@charset "UTF-8";
+$ppr:720/16/1rem;
+.guideline_con{
+    width: 100%;
+    background: white;
+    margin-top: 20/$ppr;              
+        .guideline_left{
+            width:50%;
+            float:left;
+            margin:auto;      
+           .guideline_left_img{
+                margin-top: 30/$ppr;
+               img{ 
+                                
+                   width:140/$ppr;
+                   height:140/$ppr;
+                   margin:auto;                  
+               }
+           }
+           .guideline_text{
+               font-size: 30/$ppr;
+               color: #222222;
+               text-align: center;
+               margin-top: 20/$ppr;
+           }
+        }
+        
+    
+}
